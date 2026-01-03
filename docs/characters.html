@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters - Graphic Novel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .gallery-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .gallery-header h1 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .gallery-header p {
+            color: var(--text-secondary);
+        }
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .character-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        .character-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            background: var(--bg-primary);
+        }
+        .character-info {
+            padding: 20px;
+        }
+        .character-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+        .character-role {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        .character-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+        .empty-state h2 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Graphic Novel</h1>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Read</a>
+                <a href="characters.html" class="nav-link active">Characters</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-header">
+            <h1>Characters</h1>
+            <p>Meet the characters of this story</p>
+        </div>
+
+        <div class="character-grid" id="character-grid">
+            <!-- Characters will be loaded here dynamically or added manually -->
+            <div class="empty-state">
+                <h2>No Characters Yet</h2>
+                <p>Character portraits will appear here once generated.</p>
+                <p>Add character images to <code>images/characters/</code> and update this page.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Graphic Novel | AI-generated comic</p>
+    </footer>
+
+    <script>
+        // Optional: Load characters from a JSON file
+        // async function loadCharacters() {
+        //     const response = await fetch('data/characters.json');
+        //     const characters = await response.json();
+        //     const grid = document.getElementById('character-grid');
+        //     grid.innerHTML = characters.map(char => `
+        //         <div class="character-card">
+        //             <img src="${char.image}" alt="${char.name}" class="character-image">
+        //             <div class="character-info">
+        //                 <div class="character-name">${char.name}</div>
+        //                 <div class="character-role">${char.role}</div>
+        //                 <div class="character-desc">${char.description}</div>
+        //             </div>
+        //         </div>
+        //     `).join('');
+        // }
+        // loadCharacters();
+    </script>
+</body>
+</html>

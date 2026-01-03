@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Novel Reader</title>
+    <meta name="description" content="An AI-generated graphic novel reader.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Graphic Novel Reader">
+    <meta property="og:description" content="AI-generated graphic novel">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reader.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Graphic Novel</h1>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link active">Read</a>
+                <a href="characters.html" class="nav-link">Characters</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="reader-container">
+        <!-- View mode toggle -->
+        <div class="view-controls">
+            <button id="view-single" class="view-btn active" aria-label="Single page view">
+                Page View
+            </button>
+            <button id="view-grid" class="view-btn" aria-label="Grid view">
+                Grid View
+            </button>
+        </div>
+
+        <!-- Single page reader view -->
+        <div id="single-view" class="reader-view active">
+            <div class="page-controls top">
+                <button id="first-page" class="control-btn" aria-label="First page" title="First Page (Home)">
+                    First
+                </button>
+                <button id="prev-page" class="control-btn" aria-label="Previous page" title="Previous">
+                    Prev
+                </button>
+                <span class="page-indicator">
+                    <span id="page-title">Cover</span>
+                    <span class="page-number">Page <span id="current-page">0</span> of <span id="total-pages">0</span></span>
+                </span>
+                <button id="next-page" class="control-btn" aria-label="Next page" title="Next">
+                    Next
+                </button>
+                <button id="last-page" class="control-btn" aria-label="Last page" title="Last Page (End)">
+                    Last
+                </button>
+            </div>
+
+            <div class="zoom-controls">
+                <button id="zoom-fit" class="zoom-btn active" title="Fit to Screen (F)">Fit</button>
+                <button id="zoom-width" class="zoom-btn" title="Fit Width (W)">Width</button>
+                <button id="zoom-100" class="zoom-btn" title="100% Zoom (1)">100%</button>
+                <button id="zoom-150" class="zoom-btn" title="150% Zoom (2)">150%</button>
+                <span class="zoom-level" id="zoom-level">Click image to zoom</span>
+            </div>
+
+            <div class="page-display fit-screen">
+                <img id="main-page-image"
+                     src="images/pages/page-001.webp"
+                     alt="Comic page"
+                     loading="eager">
+            </div>
+
+            <div class="page-info">
+                <div id="page-characters" class="page-meta"></div>
+                <div id="page-locations" class="page-meta"></div>
+            </div>
+
+            <div class="page-controls bottom">
+                <button id="toggle-grid-view" class="secondary-btn">
+                    Show All Pages
+                </button>
+            </div>
+
+            <div class="keyboard-hints">
+                <p>Arrow keys or A/D to navigate | F/W/1/2 for zoom | G for grid | Home/End for first/last</p>
+            </div>
+        </div>
+
+        <!-- Grid thumbnail view -->
+        <div id="grid-view" class="grid-view">
+            <div class="grid-header">
+                <h2>All Pages</h2>
+                <button id="close-grid" class="secondary-btn">Back to Reader</button>
+            </div>
+            <div class="thumbnail-grid" id="thumbnail-grid">
+                <!-- Generated dynamically from pages.json -->
+            </div>
+        </div>
+
+        <!-- Loading indicator -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Graphic Novel Reader | AI-generated comic</p>
+        <p class="keyboard-shortcuts">
+            <small>Keyboard shortcuts: Arrow keys (navigate) | G (grid) | Home/End (first/last)</small>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/reader.js"></script>
+</body>
+</html>

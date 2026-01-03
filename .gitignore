@@ -1,0 +1,38 @@
+# Environment and secrets
+.env
+.env.local
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Generated output (optional - uncomment if you don't want to commit output)
+# output/panels/*.png
+# output/pages/*.png
+# output/*.cbz
+
+# Keep output directories structure
+!output/.gitkeep
+!output/panels/.gitkeep
+!output/pages/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*.log

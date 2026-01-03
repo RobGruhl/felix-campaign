@@ -1,0 +1,34 @@
+{
+  "_schema": {
+    "description": "Character definitions for image generation. Claude Code populates this from your source material.",
+    "example_key": "CharacterName (no spaces, PascalCase)",
+    "required_fields": ["name", "full_description", "description_components"],
+    "notes": [
+      "Each character needs detailed visual descriptions for consistent image generation",
+      "description_components are broken down for flexible prompt assembly",
+      "full_description is used for simpler prompts or when components aren't needed"
+    ]
+  },
+  "ExampleHero": {
+    "name": "Example Hero",
+    "role": "Protagonist",
+    "full_description": "A young adventurer with bright eyes and determination. Wears practical leather armor over simple traveling clothes. Carries a worn backpack and walking staff.",
+    "description_components": {
+      "head_face": "Young face with bright, curious eyes. Short brown hair, slightly tousled. Determined expression.",
+      "body_build": "Average height, athletic build from travel. Good posture, confident stance.",
+      "clothing": "Practical leather armor over a simple linen shirt. Brown traveling pants tucked into worn boots.",
+      "accessories": "Worn leather backpack, wooden walking staff, small pouch at belt."
+    }
+  },
+  "ExampleMentor": {
+    "name": "Example Mentor",
+    "role": "Supporting Character",
+    "full_description": "An elderly sage with kind eyes and weathered features. Long silver beard, flowing blue robes. Carries an ancient tome.",
+    "description_components": {
+      "head_face": "Weathered face with deep laugh lines. Kind, wise eyes. Long silver beard reaching chest level.",
+      "body_build": "Tall but slightly stooped with age. Thin frame, graceful movements.",
+      "clothing": "Flowing robes in deep blue with silver embroidery. Simple sandals.",
+      "accessories": "Ancient leather-bound tome, crystal pendant on silver chain."
+    }
+  }
+}

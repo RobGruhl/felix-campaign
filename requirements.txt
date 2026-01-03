@@ -1,0 +1,20 @@
+# Graphic Novel Generator Dependencies
+
+# Image generation APIs
+google-genai>=1.0.0
+openai>=1.0.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Environment configuration
+python-dotenv>=1.0.0
+
+# Web UI for variant review
+flask>=2.3.0
+
+# Async file operations
+aiofiles>=23.0.0
+
+# Retry logic for API calls
+tenacity>=8.0.0

@@ -1,0 +1,32 @@
+{
+  "_schema": {
+    "description": "Location definitions for scene generation. Claude Code populates this from your source material.",
+    "example_key": "LocationName (no spaces, PascalCase)",
+    "required_fields": ["name", "full_description", "description_components"],
+    "notes": [
+      "Each location needs atmosphere and lighting details for consistent scenes",
+      "description_components allow flexible prompt assembly",
+      "Be specific about lighting sources - they dramatically affect mood"
+    ]
+  },
+  "ExampleVillage": {
+    "name": "Example Village",
+    "full_description": "A peaceful mountain village with thatched-roof cottages clustered around a central well. Smoke rises from chimneys. Surrounded by pine forests with snow-capped peaks in the distance.",
+    "description_components": {
+      "architecture": "Thatched-roof stone cottages with wooden shutters. Cobblestone paths between buildings. Central stone well with wooden roof.",
+      "atmosphere": "Peaceful and welcoming. Quiet rural life. Smell of wood smoke and fresh bread.",
+      "lighting": "Warm morning sunlight filtering through mountain mist. Long shadows from the eastern peaks.",
+      "key_features": "Central well, small tavern with hanging sign, blacksmith's forge with glowing coals."
+    }
+  },
+  "ExampleDungeon": {
+    "name": "Example Dungeon",
+    "full_description": "Ancient stone corridors lit by flickering torches. Moss grows on damp walls. Distant echoes of dripping water. Carved runes glow faintly on archways.",
+    "description_components": {
+      "architecture": "Massive stone blocks forming corridors and chambers. Carved archways with ancient runes. Worn stone steps descending into darkness.",
+      "atmosphere": "Oppressive and mysterious. Ancient secrets hidden in shadows. Air is cool and damp.",
+      "lighting": "Flickering orange torchlight creating dancing shadows. Faint blue glow from magical runes. Darkness beyond the light's reach.",
+      "key_features": "Glowing rune-carved archways, iron torch sconces, moss-covered walls, distant echoing drips."
+    }
+  }
+}

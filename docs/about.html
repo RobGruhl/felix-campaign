@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Graphic Novel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .about-section {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .about-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+        }
+        .tech-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        .tech-list li:last-child {
+            border-bottom: none;
+        }
+        .tech-list strong {
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Graphic Novel</h1>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Read</a>
+                <a href="characters.html" class="nav-link">Characters</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="about.html" class="nav-link active">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-container">
+        <div class="about-section">
+            <h2>About This Project</h2>
+            <p>
+                This graphic novel was created using AI image generation technology.
+                Each panel was generated from detailed prompts describing characters,
+                locations, and scenes, then assembled into comic book pages.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>The Story</h2>
+            <p>
+                [Add your story summary here]
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Technology</h2>
+            <ul class="tech-list">
+                <li><strong>Image Generation:</strong> Google Gemini / OpenAI</li>
+                <li><strong>Workflow Orchestration:</strong> Claude Code</li>
+                <li><strong>Page Assembly:</strong> Python + Pillow</li>
+                <li><strong>Web Reader:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>Credits</h2>
+            <p>
+                Created with the Graphic Novel Generator framework.
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Graphic Novel | AI-generated comic</p>
+    </footer>
+</body>
+</html>

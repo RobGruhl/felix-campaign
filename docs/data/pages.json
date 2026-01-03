@@ -1,0 +1,21 @@
+{
+  "pages": [
+    {
+      "page": 0,
+      "title": "Cover",
+      "image": "images/pages/page-000.webp",
+      "thumbnail": "images/thumbnails/page-000.webp",
+      "characters": [],
+      "locations": []
+    },
+    {
+      "page": 1,
+      "title": "Page 1",
+      "image": "images/pages/page-001.webp",
+      "thumbnail": "images/thumbnails/page-001.webp",
+      "characters": [],
+      "locations": []
+    }
+  ],
+  "total": 2
+}

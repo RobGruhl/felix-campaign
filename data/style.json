@@ -1,0 +1,35 @@
+{
+  "_schema": {
+    "description": "Comic style and aesthetic guidelines applied to all panels. Customize to match your desired art style.",
+    "notes": [
+      "base_style is prepended to all prompts",
+      "art_style defines the visual aesthetic",
+      "important_restrictions are appended as warnings to avoid common issues"
+    ]
+  },
+  "comic_aesthetic": {
+    "base_style": "Professional comic book panel illustration. High quality graphic novel art.",
+    "art_style": "Bold ink line art with vibrant colors. Dynamic composition with strong perspective. Sequential art style with clear visual storytelling. Expressive character poses and faces.",
+    "setting_tone": "Adventure narrative with rich world-building details.",
+    "visual_quality": "High detail, professional quality, publication-ready artwork.",
+    "important_restrictions": [
+      "Maintain consistent character appearances across panels",
+      "Clear readable speech bubbles when dialogue is present",
+      "No anachronistic elements unless specified"
+    ]
+  },
+  "dialogue_rendering": {
+    "instruction": "Include speech bubbles with dialogue text clearly readable. Position bubbles to not obscure important visual elements. Use appropriate bubble shapes for different speech types (normal, shouting, whispering)."
+  },
+  "panel_guidelines": {
+    "action_scenes": "Dynamic angles, motion lines, dramatic lighting. Characters in mid-action poses.",
+    "dialogue_scenes": "Clear character expressions, appropriate body language. Medium shots for conversation.",
+    "establishing_shots": "Wide perspective showing environment and context. Set the scene before action."
+  },
+  "aspect_ratio_usage": {
+    "3:4": "Standard panels in 2x2 grid layouts. Most common ratio.",
+    "9:16": "Tall/splash panels for dramatic full-page moments.",
+    "16:9": "Wide landscape panels for establishing shots and action sequences.",
+    "1:1": "Square panels - use sparingly, can create awkward layouts."
+  }
+}
