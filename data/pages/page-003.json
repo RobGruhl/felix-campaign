@@ -1,0 +1,44 @@
+{
+  "page_num": 3,
+  "title": "The Staff of Silneas",
+  "chapter": 1,
+  "layout": "grid",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "The party discovers the Staff of Silneas on a pedestal that radiates heat. The staff glows with dragon-fire power. Whortheus reaches for it eagerly, ink-stained fingers outstretched.",
+      "dialogue": "Whortheus: \"The Staff of Silneas! It can control dragons themselves!\"",
+      "characters": ["Whortheus"],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Whortheus yanks his hand back, fingers burned. Armando tries next with similar results. The staff is impossibly hot to touch directly.",
+      "dialogue": "Armando: \"Gah! It burns!\"",
+      "characters": ["Whortheus", "Armando"],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "A horrible Nothic emerges from shadows - a twisted, one-eyed creature of madness. It grins with too many teeth as zombies begin rising from bone piles behind it.",
+      "dialogue": "Nothic: \"The Wizard Council sends its regards...\"",
+      "characters": [],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 4,
+      "visual": "Eurostras uses mage hand to lift the staff, wielding it remotely. Dragon fire erupts from the staff, incinerating zombies and blasting open a sealed door. His expression shows surprise at his own power.",
+      "dialogue": "",
+      "characters": ["Eurostras"],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

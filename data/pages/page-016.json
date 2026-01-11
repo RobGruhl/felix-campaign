@@ -1,0 +1,35 @@
+{
+  "page_num": 16,
+  "title": "Return to Waterdeep",
+  "chapter": 9,
+  "layout": "3-bottom-wide",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Back in Waterdeep, the party meets with Ryan. They hide the stone bowl in a duffel bag, not trusting the wizard with knowledge of The Library. Ryan looks pleased at their success.",
+      "dialogue": "Ryan: \"The evil is defeated? Good. Your sentences are cleared.\"\nArmando: \"Where was Silneas last seen?\"",
+      "characters": ["Armando", "Corpium", "Eurostras"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "A clown shopkeeper tells them news - Clowneater rampaged through Clown Town. Corpium and Armando exchange guilty looks. Eurostras looks disturbed by the consequences of their directions.",
+      "dialogue": "Shopkeeper Clown: \"A troll... it ate so many of us. Someone told it where to find us.\"",
+      "characters": ["Armando", "Corpium"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Wide cinematic shot: The party boards Khovum's ship at dawn. Khovum Pamarath, the Triton captain, stands at the helm. The western horizon beckons. A new chapter begins. The stone bowl is hidden in their luggage.",
+      "dialogue": "Khovum: \"The western continent awaits. Are you prepared for what you'll find there?\"\nEurostras: \"No. But we're going anyway.\"",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "location": "KhovumsShip",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    }
+  ]
+}

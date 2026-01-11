@@ -1,0 +1,44 @@
+{
+  "page_num": 14,
+  "title": "Forbidden Knowledge",
+  "chapter": 8,
+  "layout": "grid",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "The Librarian examines magical items offered by the party - boots of stealth, a ring of fire detection, a broom. Black sand trails from every movement. The trade for information.",
+      "dialogue": "Librarian: \"Silneas Silvertongue... yes, we know him. He alone returned from The Library. Alive, but not... whole.\"",
+      "characters": ["Librarian", "Armando"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "The Librarian's empty eye sockets fix on Eurostras with recognition. Something about him - or the entity 'Him' - is familiar to this creature from outside reality.",
+      "dialogue": "Librarian: \"You... I recognize you. Or perhaps what shares your flesh.\"",
+      "characters": ["Librarian", "Eurostras"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "A goblin messenger appears, hands the Librarian a ring, and disintegrates into black sand. The Librarian drops the ring into the bowl - it too becomes sand and vanishes. The party watches in horror.",
+      "dialogue": "Eurostras: \"What... what was that?\"",
+      "characters": ["Librarian", "Eurostras", "Armando", "Corpium"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 4,
+      "visual": "The Librarian begins to fly away, bored with mortals who won't accept forbidden power. Corpium hefts Patricia II, bronze scales gleaming with determination.",
+      "dialogue": "Corpium: \"We didn't come here to talk.\"\nLibrarian: \"Ah. Violence, then. How... predictable.\"",
+      "characters": ["Corpium", "Librarian"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

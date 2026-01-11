@@ -1,0 +1,17 @@
+{
+  "page_num": 1,
+  "title": "Awakening",
+  "chapter": 1,
+  "layout": "splash",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Eurostras awakens in a dungeon cell, confusion and fear on his weathered face. He stares at the golden Ring of Truth on his finger, which glows with inner fire. Silver veins in the stone walls pulse with fading magic. Through the cell bars, we see Armando and Whortheus watching him with concern and confusion. The atmosphere is oppressive and mysterious.",
+      "dialogue": "Eurostras: \"Twenty-five years... I've lost twenty-five years.\"",
+      "characters": ["Eurostras", "Armando", "Whortheus"],
+      "location": "SilverTower.Dungeon",
+      "aspect_ratio": "3:4",
+      "size": "1024x1536"
+    }
+  ]
+}

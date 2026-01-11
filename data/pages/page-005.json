@@ -1,0 +1,44 @@
+{
+  "page_num": 5,
+  "title": "Don't Poke the Bear",
+  "chapter": 2,
+  "layout": "grid",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "A beautiful meadow of wildflowers. A large bear grazes peacefully in the distance. Whortheus approaches with scholarly curiosity, ignoring Armando's warning gestures.",
+      "dialogue": "Armando: \"Whortheus, what are you doing?\"",
+      "characters": ["Whortheus", "Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Whortheus literally pokes the bear with his staff. The bear's eyes go wide with rage. This is the moment everything goes wrong.",
+      "dialogue": "Whortheus: \"I just want to examine its—\"",
+      "characters": ["Whortheus"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "The bear mauls Whortheus viciously. Blood sprays across wildflowers. Armando screams in horror. Eurostras raises his hands, magical energy building.",
+      "dialogue": "",
+      "characters": ["Whortheus", "Armando", "Eurostras"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 4,
+      "visual": "Eurostras casts Thunderwave - a devastating blast of force. The bear flees in terror... but Whortheus lies motionless in the blast radius, killed by friendly fire. Eurostras stares at his hands in horror.",
+      "dialogue": "Eurostras: \"No... no, no, no...\"",
+      "characters": ["Eurostras", "Whortheus"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

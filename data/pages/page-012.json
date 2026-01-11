@@ -1,0 +1,35 @@
+{
+  "page_num": 12,
+  "title": "The Cathedral Ruins",
+  "chapter": 7,
+  "layout": "3-top-wide",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Wide shot of the ruined cathedral atop Plynach Mountain. Ice-covered stone walls partially collapsed. Grey sky overhead. The party approaches the dark entrance. The atmosphere is deeply wrong - too quiet, too still.",
+      "dialogue": "Eurostras: \"Something watches us.\"",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Inside the cathedral. In the center where the altar once stood, a stone bowl sits filled with strange milky liquid that seems to glow faintly. The party examines it warily.",
+      "dialogue": "Corpium: \"That liquid... it refills itself. Watch.\"",
+      "characters": ["Corpium", "Armando"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Armando drinks from the bowl, face twisting with nausea. His eyes briefly go white. The others take turns, each growing sicker. Armando clutches his eyes - temporarily blinded.",
+      "dialogue": "Armando: \"I can't see! It burned my eyes!\"",
+      "characters": ["Armando", "Eurostras", "Corpium"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

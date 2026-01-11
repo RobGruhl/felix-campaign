@@ -1,0 +1,44 @@
+{
+  "page_num": 8,
+  "title": "The Wizard Council",
+  "chapter": 3,
+  "layout": "grid",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Interior of Wizard Council headquarters - a grand chamber of magical architecture. Ryan the wizard addresses the party, concern evident on his face. Magical lights float overhead.",
+      "dialogue": "Ryan: \"Godrick was never authorized to retrieve the staff. You were deceived.\"",
+      "characters": ["Armando", "Corpium", "Eurostras"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Ryan hands Armando tickets to a luxury cruise and a pouch of gold. His expression suggests this is a simple task. Armando grins at the payment.",
+      "dialogue": "Ryan: \"Pursue Godrick. Get the staff back. Here are tickets and coin for supplies. Simple enough?\"",
+      "characters": ["Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Eurostras in a sword shop, examining an ugly blade with a pattern like an old couch. The shopkeeper looks bemused. This is 'Grandma's Comfort.'",
+      "dialogue": "Eurostras: \"This one. I'll call it... Grandma's Comfort.\"",
+      "characters": ["Eurostras"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 4,
+      "visual": "Corpium and Armando eyeing a legendary sword behind glass - 10,000 gold pieces. Their expressions shift from admiration to scheming. This will not end well.",
+      "dialogue": "Corpium: \"That sword though...\"\nArmando: \"Are you thinking what I'm thinking?\"",
+      "characters": ["Corpium", "Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

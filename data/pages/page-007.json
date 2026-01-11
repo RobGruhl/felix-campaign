@@ -1,0 +1,35 @@
+{
+  "page_num": 7,
+  "title": "Waterdeep",
+  "chapter": 3,
+  "layout": "3-top-wide",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Wide establishing shot of Waterdeep - a massive coastal city of stone and timber. The Wizard Council tower dominates the skyline. Ships crowd the harbor. The party enters through the main gate, dwarfed by the city's scale.",
+      "dialogue": "",
+      "characters": ["Corpium", "Armando", "Eurostras"],
+      "location": "Waterdeep",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Outside The Busted Bottle tavern. A homeless clown named Squigley performs tricks with fire magic, her painted smile cracking to reveal sadness beneath. She holds out a cup for coins.",
+      "dialogue": "Squigley: \"Spare a coin? Watch - I can make fire dance!\"",
+      "characters": ["Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Close on Armando's face - his showman's smile has vanished, replaced by genuine terror. His eyes are wide, pupils dilated. Sweat beads on his forehead. The clown's fire reflects in his panicked gaze.",
+      "dialogue": "Armando (whispered): \"We need to go inside. Now.\"",
+      "characters": ["Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

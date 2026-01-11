@@ -1,0 +1,44 @@
+{
+  "page_num": 11,
+  "title": "Clowning Around",
+  "chapter": 6,
+  "layout": "grid",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "On the forest path to the mountain. Blinko the clown blocks their way, face paint garish against the dark trees. Electric sparks dance from his fingertips.",
+      "dialogue": "Blinko: \"Are you the Clown Messiah? We've been waiting...\"",
+      "characters": ["Corpium", "Armando"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Corpium lies with a straight face. Blinko's painted expression shifts to suspicion, seeing through the deception immediately.",
+      "dialogue": "Corpium: \"Yes. I am the Clown Messiah.\"\nBlinko: \"You lie. But Clown Town waits regardless.\"",
+      "characters": ["Corpium"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "A massive troll emerges from the forest - Clowneater. Its mouth drips with greasepaint and blood. It sniffs the air hungrily.",
+      "dialogue": "Clowneater: \"Are you clowns? I eat clowns.\"",
+      "characters": ["Corpium", "Armando", "Eurostras"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 4,
+      "visual": "The party points back the way they came, toward Clown Town. Clowneater grins with horrible anticipation. Armando looks pale with fear but also relief.",
+      "dialogue": "Armando: \"Not clowns. But there's a whole town of them that way.\"\nClowneater: \"Goooood.\"",
+      "characters": ["Armando", "Corpium", "Eurostras"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

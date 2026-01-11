@@ -1,0 +1,35 @@
+{
+  "page_num": 2,
+  "title": "The Silver Tower",
+  "chapter": 1,
+  "layout": "3-top-wide",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Wide establishing shot of the Silver Tower's ruined interior - broken staircases leading nowhere, floating platforms, impossible geometry. Cold silver light filters through cracks in reality. Bone collections line shelves. The party stands small against the vast, wrong architecture.",
+      "dialogue": "",
+      "characters": ["Eurostras", "Armando", "Whortheus"],
+      "location": "SilverTower",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Armando gestures theatrically as he explains the mission, crimson coat dramatic against the silver surroundings. His showman's smile doesn't quite hide his unease.",
+      "dialogue": "Armando: \"The Wizard Council hired us to retrieve the Staff of Silneas. You - or rather, 'Him' - agreed to help before... whatever happened to you.\"",
+      "characters": ["Armando"],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Close on Eurostras's face, haunted eyes staring at his hands. One hand bears the Ring of Truth, the other holds a scrap of paper - his only way to communicate with the entity 'Him' that shares his body.",
+      "dialogue": "Eurostras: \"A nameless monk in my body... and I remember nothing.\"",
+      "characters": ["Eurostras"],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "page_num": 4,
+  "title": "Theft in the Night",
+  "chapter": 1,
+  "layout": "3-bottom-wide",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "The party escapes through an underwater passage, emerging exhausted on a moonlit shore. They've made camp, the staff carefully laid beside sleeping Whortheus.",
+      "dialogue": "",
+      "characters": ["Eurostras", "Armando", "Whortheus"],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Morning light. Armando sits up in alarm. Where the staff lay, only a small dreidel and a mocking thank-you note remain. His expression shifts from confusion to rage.",
+      "dialogue": "Armando: \"The staff - it's gone! 'Thanks for the help. -Godrick the Golden'\"",
+      "characters": ["Armando"],
+      "location": "SilverTower",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Wide shot: Eurostras spins the dreidel experimentally. Golden light erupts as Gimel the Golden Golem manifests - a friendly five-foot construct of polished gold, coins visible through joints, Hebrew letter glowing on forehead. The party stares in amazement.",
+      "dialogue": "Gimel: \"Hello! I am Gimel. How may I assist you?\"",
+      "characters": ["Eurostras", "Armando", "Whortheus", "Gimel"],
+      "location": "SilverTower",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    }
+  ]
+}

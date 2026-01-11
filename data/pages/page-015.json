@@ -1,0 +1,26 @@
+{
+  "page_num": 15,
+  "title": "Against the Impossible",
+  "chapter": 8,
+  "layout": "2-horizontal",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Wide action shot: The party battles the Librarian. Armando's spells splash uselessly against it - magic resistant. Corpium charges with Patricia II raised. Eurostras circles for an opening. The creature's wings spread wide, black sand trailing.",
+      "dialogue": "Armando: \"My magic does nothing!\"\nCorpium: \"Then we use steel!\"",
+      "characters": ["Corpium", "Armando", "Eurostras", "Librarian"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Wide shot: Patricia II cleaves through the Librarian's skeletal form. The creature collapses, disintegrating into black sand that flows back toward the bowl. Its final words echo as it dies - but dies it does, for now.",
+      "dialogue": "Librarian (disintegrating): \"Knowledge of The Library is a heavy burden... you will learn this.\"",
+      "characters": ["Corpium", "Librarian"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    }
+  ]
+}

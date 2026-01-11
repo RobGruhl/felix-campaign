@@ -1,0 +1,17 @@
+{
+  "page_num": 13,
+  "title": "The Librarian",
+  "chapter": 8,
+  "layout": "splash",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "HORROR SPLASH: Black sand pours from the now-empty bowl, pooling and rising into a terrible form. A Librarian emerges - a black-winged skeleton with proportions that hurt to perceive, empty eye sockets that somehow see, too many teeth arranged in angles that shouldn't exist. Void-black robes flow like underwater currents. The party recoils in primal terror. This is cosmic horror made manifest - something from OUTSIDE reality.",
+      "dialogue": "Librarian: \"Knowledge seekers. The Library offers power far beyond your wizard councils... for those willing to pay the price.\"",
+      "characters": ["Librarian", "Eurostras", "Armando", "Corpium"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "1024x1536"
+    }
+  ]
+}

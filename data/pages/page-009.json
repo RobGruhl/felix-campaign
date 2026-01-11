@@ -1,0 +1,44 @@
+{
+  "page_num": 9,
+  "title": "Robbery Gone Wrong",
+  "chapter": 4,
+  "layout": "grid",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Chaos in the sword shop. Corpium smashes the display case while Armando casts a spell. Guards pour in through the door. Glass and magic fly everywhere.",
+      "dialogue": "Guard: \"Halt! Thieves!\"",
+      "characters": ["Corpium", "Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "The fight escalates rapidly. Corpium swings Patricia II while guards overwhelm them with numbers. Armando's spells flash but they're outnumbered.",
+      "dialogue": "",
+      "characters": ["Corpium", "Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Eurostras bursts in with Ryan, who looks furious and disappointed. The wizard raises his staff, magical energy crackling.",
+      "dialogue": "Ryan: \"ENOUGH! You're all under arrest!\"",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 4,
+      "visual": "The party in prison cells. Eurostras without his ring looks lost. Corpium sits stoically. Armando, in a better cell, smirks - his charm spell on Ryan worked.",
+      "dialogue": "Guard: \"Execution at dawn for the dragonborn and the monk. The warlock gets a month.\"",
+      "characters": ["Eurostras", "Corpium", "Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

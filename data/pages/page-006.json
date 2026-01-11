@@ -1,0 +1,35 @@
+{
+  "page_num": 6,
+  "title": "The Brother",
+  "chapter": 2,
+  "layout": "3-left-tall",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Corpium stands over Whortheus's fresh grave, massive bronze-scaled form silhouetted against grey sky. His yellow reptilian eyes show no grief - only cold pragmatism. Patricia II hangs from his back.",
+      "dialogue": "Corpium: \"My brother was a fool. Always was.\"",
+      "characters": ["Corpium"],
+      "location": "Waterdeep",
+      "aspect_ratio": "9:16",
+      "size": "576x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Eurostras looks guilty, unable to meet Corpium's gaze. Armando places Whortheus's crystal orb into Gimel's Shin form for safekeeping.",
+      "dialogue": "Eurostras: \"I'm sorry. I tried to save him, but—\"\nCorpium: \"Save your apologies. Is there loot involved in your quest?\"",
+      "characters": ["Eurostras", "Armando", "Corpium", "Gimel"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "The newly formed party walks toward the distant walls of Waterdeep, visible on the horizon. Corpium's massive form leads, Armando's crimson coat bright against the grey day.",
+      "dialogue": "Armando: \"The Wizard Council awaits. And they owe us answers about Godrick.\"",
+      "characters": ["Corpium", "Armando", "Eurostras"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    }
+  ]
+}

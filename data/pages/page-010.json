@@ -1,0 +1,35 @@
+{
+  "page_num": 10,
+  "title": "A Second Chance",
+  "chapter": 5,
+  "layout": "3-right-tall",
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Ryan visits Armando in his cell, magical light from his staff illuminating the conversation. His expression is conflicted - anger mixed with desperate need.",
+      "dialogue": "Ryan: \"There's a mission. Dangerous. Complete it, and your sentences are cleared.\"",
+      "characters": ["Armando"],
+      "location": "Waterdeep",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 2,
+      "visual": "The party materializes in a flash of teleportation magic, their possessions returned. Snow-covered mountains loom behind them. Eurostras clutches his returned ring with relief.",
+      "dialogue": "Ryan (voice fading): \"Defeat the evil atop Plynach Mountain. Don't disappoint me again.\"",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Tall panel showing the party beginning their climb up the icy mountain. Corpium leads, using Patricia II to carve handholds. The peak with its ruined cathedral is visible far above, wreathed in unnatural mist.",
+      "dialogue": "",
+      "characters": ["Corpium", "Armando", "Eurostras"],
+      "location": "PlynachMountain",
+      "aspect_ratio": "9:16",
+      "size": "576x1024"
+    }
+  ]
+}
