@@ -1,6 +1,6 @@
 {
   "_schema": {
-    "description": "Location definitions for scene generation. Claude Code populates this from your source material.",
+    "description": "Felix Campaign location definitions for dark fantasy painterly image generation",
     "example_key": "LocationName (no spaces, PascalCase)",
     "required_fields": ["name", "full_description", "description_components"],
     "variant_pattern": "Use dot notation for variants: ThroneRoom, ThroneRoom.Ruined, ThroneRoom.Decorated",
@@ -12,36 +12,274 @@
       "Each variant is a complete, standalone entry - not a partial override"
     ]
   },
-  "ExampleVillage": {
-    "name": "Example Village",
-    "full_description": "A peaceful mountain village with thatched-roof cottages clustered around a central well. Smoke rises from chimneys. Surrounded by pine forests with snow-capped peaks in the distance.",
+
+  "SilverTower": {
+    "name": "The Silver Tower",
+    "full_description": "An ancient wizard's tower of gleaming silver metal, now in dimensional ruins. The interior is a maze of broken staircases and floating platforms. Bone collections and alchemical residue hint at dark experiments. Where the Staff of Silneas was kept.",
     "description_components": {
-      "architecture": "Thatched-roof stone cottages with wooden shutters. Cobblestone paths between buildings. Central stone well with wooden roof.",
-      "atmosphere": "Peaceful and welcoming. Quiet rural life. Smell of wood smoke and fresh bread.",
-      "lighting": "Warm morning sunlight filtering through mountain mist. Long shadows from the eastern peaks.",
-      "key_features": "Central well, small tavern with hanging sign, blacksmith's forge with glowing coals."
+      "architecture": "Spiraling tower of silver-grey metal with arcane engravings. Interior filled with broken platforms, staircases that lead nowhere, impossible geometry suggesting dimensional damage.",
+      "atmosphere": "Eerie and unsettling. The air tastes of old magic and decay. Reality feels thin here, as if the tower exists between dimensions.",
+      "lighting": "Cold silver light filtering through cracks in reality. Occasional flickers of otherworldly blue. Shadows that don't match their sources.",
+      "key_features": "Bone collections on shelves, alchemical equipment, the hot staff pedestal, trap doors, dragon corpse remnants."
     }
   },
-  "ExampleVillage.Attacked": {
-    "name": "Example Village (Under Attack)",
-    "base_location": "ExampleVillage",
-    "variant_context": "During or after an attack",
-    "full_description": "The same peaceful mountain village, now in chaos. Thatched roofs burning, smoke billowing. Villagers fleeing. The central well area is a battleground.",
+
+  "SilverTower.Dungeon": {
+    "name": "Silver Tower Dungeon",
+    "base_location": "SilverTower",
+    "variant_context": "The underground prison level where Eurostras awoke",
+    "full_description": "The dungeon beneath the Silver Tower where Eurostras awoke with the Ring of Truth. Cells carved from silver-veined stone. Magical restraints still hum with residual power.",
     "description_components": {
-      "architecture": "Same cottages, but some roofs ablaze. Doors broken open. Cobblestone paths littered with debris. Central well overturned.",
-      "atmosphere": "Chaotic and terrifying. Screams and crackling fire. Acrid smoke fills the air.",
-      "lighting": "Orange firelight flickering against night sky. Dancing shadows. Embers floating upward.",
-      "key_features": "Burning buildings, fleeing villagers, overturned carts, broken weapons on the ground."
+      "architecture": "Low stone ceilings with silver veins running through rock. Iron-barred cells, rusted with age. Central drainage grate. Chains bolted to walls.",
+      "atmosphere": "Oppressive and close. Stale air heavy with forgotten magic. Echoes carry strangely, as if the walls themselves remember screams.",
+      "lighting": "Dim magical glow from silver veins in stone. Torches long since extinguished. Darkness pressing in from all sides.",
+      "key_features": "Cell where Eurostras awoke, magical restraints, silver veins in stone, water passage for escape."
     }
   },
-  "ExampleDungeon": {
-    "name": "Example Dungeon",
-    "full_description": "Ancient stone corridors lit by flickering torches. Moss grows on damp walls. Distant echoes of dripping water. Carved runes glow faintly on archways.",
+
+  "Waterdeep": {
+    "name": "Waterdeep",
+    "full_description": "A massive coastal city of commerce and intrigue. Towering buildings of stone and timber crowd narrow streets. The Wizard Council headquarters dominates the skyline. Mix of wealth and poverty, magic and mundane.",
     "description_components": {
-      "architecture": "Massive stone blocks forming corridors and chambers. Carved archways with ancient runes. Worn stone steps descending into darkness.",
-      "atmosphere": "Oppressive and mysterious. Ancient secrets hidden in shadows. Air is cool and damp.",
-      "lighting": "Flickering orange torchlight creating dancing shadows. Faint blue glow from magical runes. Darkness beyond the light's reach.",
-      "key_features": "Glowing rune-carved archways, iron torch sconces, moss-covered walls, distant echoing drips."
+      "architecture": "Dense urban architecture mixing stone foundations with timber upper floors. Narrow winding streets, covered bridges between buildings. Wizard Council tower rising above all else.",
+      "atmosphere": "Bustling and chaotic. Street vendors, pickpockets, merchants, and mages sharing the same crowded spaces. Smell of sea salt and city life.",
+      "lighting": "Variable - harsh noon sun on main thoroughfares, deep shadows in alleyways. Magical lights glow from wizard quarters. Harbor light glinting off water.",
+      "key_features": "The Busted Bottle tavern, Wizard Council headquarters, Idelius Fashion shop, Poronin sword shop, the harbor with Khovum's ship."
+    }
+  },
+
+  "PlynachMountain": {
+    "name": "Plynach Mountain",
+    "full_description": "A cursed peak where the party first encountered a Librarian. Ice-covered ruins of a cathedral crown the summit. The bowl artifact was found here, filled with milky liquid that summoned black sand.",
+    "description_components": {
+      "architecture": "Ruined stone cathedral frozen in eternal ice. Broken walls reveal interior where altar once stood. Surrounding town reduced to rubble, some structures preserved in ice.",
+      "atmosphere": "Oppressive wrongness pervades. The air itself feels watched. Cold that seeps into bones despite warmth. Silence broken only by wind.",
+      "lighting": "Grey overcast sky above snow and ice. Interior lit by whatever light filters through broken walls. Unnatural shadows in corners that seem to move.",
+      "key_features": "The stone bowl on altar, milky liquid that refills magically, black sand that pools, ruins of cathedral nave, ice walls too steep to climb, golden frame fragments."
+    }
+  },
+
+  "ClownTown": {
+    "name": "Clown Town",
+    "full_description": "A desperate settlement of homeless clowns, victims of the Waterdeep Project who had their minds erased and replaced with clown personas. Garish colors and tragedy mixed. Awaiting the Clown Messiah.",
+    "description_components": {
+      "architecture": "Ramshackle tents and lean-tos constructed from carnival scraps. Faded big-tops repurposed as housing. Everything patched together with garish fabric.",
+      "atmosphere": "Tragic beneath the forced cheer. Minds destroyed, only clowning remains. Electric and fire magic sparks randomly from damaged minds. Deeply unsettling false joy.",
+      "lighting": "Garish magical lights that flicker unpredictably. Colors that clash against the painterly dark fantasy style. Shadows all wrong, like a circus gone to nightmare.",
+      "key_features": "Blinko performing tricks, tattered circus tents, Clowneater Troll lurking nearby, residents performing mindless routines, prophecy signs about the Messiah."
+    }
+  },
+
+  "KhovumsShip": {
+    "name": "Khovum's Ship",
+    "full_description": "A sturdy merchant vessel captained by the Triton collector Khovum Pamarath. The deck holds curiosities from many lands. Crossed the sea carrying the party west, dealing with stowaways and undersea worms.",
+    "description_components": {
+      "architecture": "Classic sailing ship with foreign design elements - Triton influences in curved lines and coral decorations. Below deck cramped but organized. Curiosity collections in captain's quarters.",
+      "atmosphere": "Salt spray and adventure. Working vessel with exotic touches. Creaks and groans of wood on open water. Sense of crossing into unknown lands.",
+      "lighting": "Bright sun on open water. Lantern light below deck. Moonlight during night watches. Storm light during the worm attack.",
+      "key_features": "Captain Khovum's collection, hidden compartments where Viz stowed away, crow's nest lookout, cargo hold with rot matrix, ropes and rigging."
+    }
+  },
+
+  "GlassCitadel": {
+    "name": "The Glass Citadel",
+    "full_description": "A city of crystalline spires and glass architecture on the western continent. Before its transformation, a place of beauty and commerce. Demons imprisoned beneath it, their influence seeping through crystal foundations.",
+    "description_components": {
+      "architecture": "Towers and buildings constructed from magical glass in jewel tones - emerald, ruby, sapphire. Streets paved with smooth crystal. Central tower of authority rises highest.",
+      "atmosphere": "Beautiful but fragile. Prismatic light plays across every surface. Subtle wrongness beneath the beauty - the demons below make their presence felt.",
+      "lighting": "Sunlight refracting through glass creates rainbows everywhere. Interior spaces glow with filtered colored light. At night, magical illumination turns the city into a lantern.",
+      "key_features": "Tower of Authority, glass undercity with demon prisons, Greenwise's garden, market districts, the three sealed chambers of the Three Humors."
+    }
+  },
+
+  "GlassCitadel.Transformed": {
+    "name": "The Glass Citadel (Demonic Transformation)",
+    "base_location": "GlassCitadel",
+    "variant_context": "After Rizzmodeus's influence corrupts the city",
+    "full_description": "The Glass Citadel after demonic corruption. Crystal spires now red and black. Streets cracked into 30-foot pits. Demons openly walking among terrified citizens. Where Corpium became Glass Authority.",
+    "description_components": {
+      "architecture": "Same glass towers but now stained red and black by demonic influence. Streets shattered into abyssal pits. Buildings cracked and bleeding crimson light. Tower of Authority stands but changed.",
+      "atmosphere": "Oppressive heat and sulfur. Fear palpable in the air. Citizens moving quickly, avoiding the demons that now walk freely. Beauty corrupted into terrible majesty.",
+      "lighting": "Infernal red light filtering through corrupted glass. Flames licking from cracks in reality. Smoke and ash obscuring the sky. No more rainbows - only crimson.",
+      "key_features": "30-foot street pits revealing the abyss, demons walking openly, corrupted Tower of Authority, red glass bleeding light, citizens in terror."
+    }
+  },
+
+  "GlassAbyss": {
+    "name": "The Glass Abyss",
+    "full_description": "The prison dimension beneath the Glass Citadel where the Three Humors were sealed. Rizzmodeus ruled here before being freed. Armando fell here and emerged with demonic gifts. An infernal realm of fire and darkness.",
+    "description_components": {
+      "architecture": "No architecture in the traditional sense - platforms of obsidian floating in an infinite void. Chains big as buildings stretching into darkness. Prison structures built into living flame.",
+      "atmosphere": "Crushing demonic presence. Heat that would kill mortals. The constant sense of being judged by ancient, patient evil. Time moves differently here.",
+      "lighting": "Fire is the only light - from Rizzmodeus's form, from rivers of lava below, from floating infernal runes. Shadows are alive and watching.",
+      "key_features": "Rizzmodeus's throne of volcanic glass, chains of his former imprisonment, the void stretching infinitely, other demons lurking in shadows, gifts offered to worthy visitors."
+    }
+  },
+
+  "GnomeForest": {
+    "name": "The Gnome Forest",
+    "full_description": "Ancient forest where Silneas Silvertongue's tomb lies hidden. Trees twisted by old magic. Gnomish caretakers guard the secrets. Contains a painting that serves as a portal to Silneas's memories.",
+    "description_components": {
+      "architecture": "Natural forest with subtle gnomish modifications - hidden doors in tree trunks, underground passages, the tomb structure built into a hillside.",
+      "atmosphere": "Hushed and reverent. Old magic saturates everything. Trees seem to watch visitors. Time feels slowed, protected from the outside world.",
+      "lighting": "Dappled sunlight through dense canopy. Bioluminescent fungi in dark places. The painting glows with inner light. Mysterious and gentle illumination.",
+      "key_features": "Silneas's tomb entrance, magical painting portal, gnomish guardians, twisted ancient trees, hidden pathways."
+    }
+  },
+
+  "SilneasTomb": {
+    "name": "Silneas's Tomb",
+    "full_description": "The resting place of the only person to return from The Library - Silneas Silvertongue, alive but insane. Contains a magical painting that serves as a portal to his memories. The Ring of Truth could restore his sanity.",
+    "description_components": {
+      "architecture": "Elegant stone chamber built into the earth. Walls covered in murals of Silneas's life. Central sarcophagus (empty - he's not dead). The painting dominates one wall.",
+      "atmosphere": "Sorrowful and mysterious. The weight of forbidden knowledge hangs in the air. Silneas's insanity has infected the space with whispers.",
+      "lighting": "Soft magical glow from murals. The painting pulses with strange light. Candles that never burn down. Shadows that move when depicting Library memories.",
+      "key_features": "The magical painting portal, empty sarcophagus, murals telling his story, the sense of madness pressing in, whispers at the edge of hearing."
+    }
+  },
+
+  "SilneasMemory.SilverTower": {
+    "name": "Memory: The Silver Tower",
+    "full_description": "Inside the painting - Silneas's memory of the Silver Tower as it was before falling to ruin. A glimpse of ancient wizard glory, seen through a mad mind's reconstruction.",
+    "description_components": {
+      "architecture": "The Silver Tower whole and magnificent. Spiraling architecture intact, silver gleaming. Libraries and laboratories in perfect order. As it was centuries ago.",
+      "atmosphere": "Dreamlike and unstable. Colors shift subtly. Things aren't quite right - details change when you look away. Memory of glory filtered through madness.",
+      "lighting": "Idealized silver-gold light of remembered perfection. No shadows exist in this memory. Everything illuminated by nostalgia.",
+      "key_features": "Intact tower interior, young Silneas working, the staff in its original place, hints of wrongness showing this is memory not reality."
+    }
+  },
+
+  "SilneasMemory.BlackDesert": {
+    "name": "Memory: The Black Desert",
+    "full_description": "The Black Desert from Silneas's memories - the boundary between reality and The Library. Endless dunes of black sand under a starless sky. Where forbidden knowledge begins.",
+    "description_components": {
+      "architecture": "No structures - only endless dunes of black sand stretching to infinite horizons. Occasional bones of massive creatures half-buried.",
+      "atmosphere": "Cosmic dread. The sense of approaching something beyond mortal comprehension. Wind that carries whispers of forbidden knowledge.",
+      "lighting": "No visible light source, yet everything dimly visible. Stars are absent - the sky is pure void. The sand itself seems to emit faint anti-light.",
+      "key_features": "Black sand dunes, starless void sky, massive bones, the sense of The Library beyond, Librarians watching from distance."
+    }
+  },
+
+  "TheLibrary": {
+    "name": "The Library",
+    "full_description": "A dimension of forbidden knowledge from outside reality. Black sand, void purple skies, skeletal entities. Only Silneas has returned, and it drove him mad. The ultimate horror of the campaign - ancient, alien, and wrong.",
+    "description_components": {
+      "architecture": "Impossible shelving stretching into infinite darkness. Books bound in materials that shouldn't exist. Staircases that defy gravity. Architecture that hurts to perceive.",
+      "atmosphere": "Cosmic horror beyond description. Ancient knowledge pressing against sanity. Time and space mean nothing. The Archtruths dwell somewhere within.",
+      "lighting": "No natural light. Void purple illumination from nowhere. Black sand glows with anti-light. Librarians themselves emit faint wrongness.",
+      "key_features": "Infinite shelves of forbidden books, Librarians and Historians, Archivists scuttling between dimensions, chains at the bottom mentioned by Ilrune VII, the sense of being watched by primordial beings."
+    }
+  },
+
+  "BromdirInn": {
+    "name": "Bromdir's Inn",
+    "full_description": "A cozy halfling-run tavern that became the party's base of operations in Book Two. Bromdir Sparrowcap's pride and joy before he became an adventurer. Warm, welcoming, and full of good food.",
+    "description_components": {
+      "architecture": "Low-ceilinged but spacious interior built for halfling comfort with accommodations for taller folk. Roaring fireplace, many small tables, excellent kitchen visible through service window.",
+      "atmosphere": "Warm and welcoming. The smell of Bromdir's cooking. Regulars nursing ales and sharing stories. A haven of normalcy in a world gone mad.",
+      "lighting": "Warm firelight and candles creating cozy shadows. Kitchen glow from cooking fires. Lanterns on each table. The warmth of hearth and home.",
+      "key_features": "The bar where Bromdir held court, his famous cooking, regular patrons, map of the region on wall, trophy from some past adventure."
+    }
+  },
+
+  "DeepForest": {
+    "name": "The Deep Forest",
+    "full_description": "Ancient woodland where the Wibex hunt took place - the battle that killed Corpium. Home to the Multibeast and darker things. The trees hold secrets and dangers in equal measure.",
+    "description_components": {
+      "architecture": "No structures - primeval forest untouched by civilization. Trees so old and large their canopy blocks the sky. Natural clearings and hidden groves.",
+      "atmosphere": "Primal and dangerous. Ancient magic in the soil. Creatures watching from shadows. The sense that humanity is not welcome here.",
+      "lighting": "Almost no direct sunlight reaches the forest floor. Dim green-filtered light. Bioluminescence in fungi and flowers. Darkness between trees.",
+      "key_features": "The clearing where Corpium fell, Multibeast's grotto, massive ancient trees, hidden animal trails, the Wibex's territory."
+    }
+  },
+
+  "Soapstone": {
+    "name": "Soapstone",
+    "full_description": "The holy city where angels walk openly and the Peeking Festival celebrates divine connection. Beautiful white architecture, cathedral spires, but also the Dead Zone where Magis the vampire lurks.",
+    "description_components": {
+      "architecture": "Gleaming white stone buildings in soaring religious architecture. Cathedral spires reaching toward heaven. Angel statues on every corner. Clean, geometric, holy.",
+      "atmosphere": "Sacred and reverent. Angels occasionally visible overhead. Citizens devout and peaceful. But darkness lurks in the Dead Zone.",
+      "lighting": "Soft golden sunlight suggesting divine favor. Interior spaces lit by sacred flames. Angel visitations bring their own ethereal illumination.",
+      "key_features": "Market Cathedral, Cathedral of Heroes, the Dead Zone boundary, Magis's mansion in shadow, holy symbols everywhere, Peeking Festival decorations."
+    }
+  },
+
+  "Soapstone.DeadZone": {
+    "name": "The Dead Zone",
+    "base_location": "Soapstone",
+    "variant_context": "The corrupted area where Magis the vampire dwells",
+    "full_description": "A section of Soapstone cut off from divine light. Where the vampire Magis makes his lair. Shadows pool unnaturally, holy symbols crack, and death has a foothold in the holy city.",
+    "description_components": {
+      "architecture": "Same white stone architecture but stained and crumbling. Buildings abandoned, windows dark. Magis's mansion dominates - gothic horror amid religious beauty.",
+      "atmosphere": "Cold and wrong. Divine presence cannot enter. Shadows move with purpose. The undead stir in forgotten corners.",
+      "lighting": "Light dies at the boundary. Interior lit only by Magis's dark candles. Moon and stars seem dimmer here. Perpetual twilight.",
+      "key_features": "The boundary where light fails, Magis's mansion, Dark Cathedral, shadows that move independently, abandoned buildings, sense of being watched by undead eyes."
+    }
+  },
+
+  "RuinRingedMountain": {
+    "name": "The Ruin-Ringed Mountain",
+    "full_description": "Chromium the beholder's lair - a mountain surrounded by the ruins of conquered civilizations. Inside, the Iron Brain command center. Where the epic battle against the King Beneath the Mountains took place.",
+    "description_components": {
+      "architecture": "Mountain honeycombed with tunnels and chambers. Ruins of dwarven and other civilizations ring the base like trophies. The Iron Brain at the core - a command center of beholder technology.",
+      "atmosphere": "Nightmare made manifest. Chromium's dreams bleed into reality here. Doppelgangers lurk. The sense of being watched by countless eyes.",
+      "lighting": "Eye-stalks provide illumination that sees through you. Nightmare storms outside create red lightning. The Iron Brain glows with alien power.",
+      "key_features": "Ghost kings guarding passages, Elder Oblex, beholderkin guardians, the Iron Brain command center, Chromium's throne room, dream-manifested horrors."
+    }
+  },
+
+  "Dwarflands": {
+    "name": "The Dwarflands",
+    "full_description": "Territory conquered by Chromium the beholder - once proud dwarven kingdoms reduced to slavery and terror. Hair Kings roam feral, slavers profit from suffering, refugees flee north.",
+    "description_components": {
+      "architecture": "Dwarven architecture repurposed for oppression. Mountain holds converted to slave pens. Once-grand halls now haunted by Chromium's presence.",
+      "atmosphere": "Oppression and resistance. 'Armando and the Furious Four' inspired hope. Slaves whisper of freedom while masters watch with eyes given by Chromium.",
+      "lighting": "Underground dwarven areas lit by forge-fire and phosphorescent minerals. Surface areas under perpetual Nightmare Storm red light. Hope in small hidden flames.",
+      "key_features": "Dwarfgate checkpoint, Forest of Hair Kings, Wish Lake with elven ruins, House of Dorin, slave markets, Peacekeeper patrols."
+    }
+  },
+
+  "FeyRealm": {
+    "name": "The Fey Realm",
+    "full_description": "The dimension where Bromdir gambled away his name, becoming 'Sweetie Pie'. Beautiful and terrifying, where deals cost more than expected and time flows differently. Indigo was trapped here as well.",
+    "description_components": {
+      "architecture": "Impossible beauty that shifts when observed. Palaces of living flowers, castles of condensed moonlight. Nothing is solid, everything negotiable.",
+      "atmosphere": "Intoxicating and dangerous. Every breath carries risk of enchantment. Beauty that can trap souls. Deals offered that seem fair until the cost comes due.",
+      "lighting": "Eternal twilight or eternal noon, depending on the Fey lord's mood. Bioluminescent everything. Colors more vivid than reality allows.",
+      "key_features": "Gambling dens where names are wagered, Cyan the frost fey, impossible architecture, trapped mortals, the sense of time having no meaning."
+    }
+  },
+
+  "Lorthos": {
+    "name": "Lorthos",
+    "full_description": "The Triton capital city beneath the waves. Gleaming coral and pearl architecture. Where Khovum Pamarath originated. The party visited here pursuing their northern quest.",
+    "description_components": {
+      "architecture": "Underwater city of living coral and cultured pearl. Spires of shaped stone reaching toward the surface light. Air-filled domes for surface-dweller guests.",
+      "atmosphere": "Alien beauty of the deep. Ancient Triton civilization at its height. Currents carry whispers and songs. Peace maintained by isolation from surface troubles.",
+      "lighting": "Bioluminescent city lights, filtered sunlight from far above, phosphorescent sea creatures decorating like living lanterns.",
+      "key_features": "Royal palace of pearl, air-domes for visitors, Khovum's family holdings, ancient Triton archives, defenses against deep-sea threats."
+    }
+  },
+
+  "AquariusTower": {
+    "name": "Aquarius's Tower",
+    "full_description": "The hidden tower of Aquarius the Hidden, last sane Wizard Council member. Located in the far north. Specializes in enchanting. Where the party's armor was enhanced for their final journey.",
+    "description_components": {
+      "architecture": "Isolated tower of blue-grey stone in frozen northern wastes. Interior surprisingly warm, filled with enchanting workshops and magical libraries.",
+      "atmosphere": "Scholarly and secretive. Aquarius hiding from the corruption that took the other council members. Magic permeates every surface.",
+      "lighting": "Magical lights in cool blues and silvers. Northern lights visible through tower windows. Enchanting circles glow with power.",
+      "key_features": "Enchanting workshop, armor enhancement circles, extensive magical library, scrying pools, views of the frozen north, defenses against unwanted visitors."
+    }
+  },
+
+  "HQForest": {
+    "name": "The HQ Forest",
+    "full_description": "A forest grown by Greenwise as a secret meeting place - but it went wrong. Carnivorous plant tornadoes attack here, killing Clerence and Eurostras. Where Book One's tragedy climaxed.",
+    "description_components": {
+      "architecture": "No structures - a forest grown too fast with magical instability. Trees twisted by accelerated growth. Clearings that are actually traps.",
+      "atmosphere": "Beautiful and deadly. Nature corrupted by hasty magic. The forest itself is hungry. Where the party learned that not all threats are monsters.",
+      "lighting": "Deceptively pleasant dappled sunlight. When plants attack, light dims as foliage closes in. Greenwise's magic glow barely visible.",
+      "key_features": "Carnivorous plant tornadoes, twisted rapid-growth trees, the clearing where Rizzmodeus manifested, graves of fallen party members."
     }
   }
 }

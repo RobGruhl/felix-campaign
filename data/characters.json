@@ -1,6 +1,6 @@
 {
   "_schema": {
-    "description": "Character definitions for image generation. Claude Code populates this from your source material.",
+    "description": "Felix Campaign character definitions for dark fantasy painterly image generation",
     "example_key": "CharacterName (no spaces, PascalCase)",
     "required_fields": ["name", "full_description", "description_components"],
     "variant_pattern": "Use dot notation for variants: Hero, Hero.Formal, Hero.Injured",
@@ -12,52 +12,254 @@
       "Each variant is a complete, standalone entry - not a partial override"
     ]
   },
-  "ExampleHero": {
-    "name": "Example Hero",
-    "role": "Protagonist",
-    "full_description": "A young adventurer with bright eyes and determination. Wears practical leather armor over simple traveling clothes. Carries a worn backpack and walking staff.",
+
+  "Eurostras": {
+    "name": "Eurostras",
+    "role": "Protagonist (Book One)",
+    "full_description": "A weathered human pirate in his forties with a haunted, distant gaze that shifts to sharp focus when 'Him' takes control. Sun-darkened skin marked by old scars. Long dark hair streaked with grey, often tied back. Wears a mix of monastic robes over worn sailor's garb - a visual tension between his two identities.",
     "description_components": {
-      "head_face": "Young face with bright, curious eyes. Short brown hair, slightly tousled. Determined expression.",
-      "body_build": "Average height, athletic build from travel. Good posture, confident stance.",
-      "clothing": "Practical leather armor over a simple linen shirt. Brown traveling pants tucked into worn boots.",
-      "accessories": "Worn leather backpack, wooden walking staff, small pouch at belt."
+      "head_face": "Weathered face in his forties with deep-set eyes that shift between haunted distance and monk-like serenity. Sharp cheekbones, salt-crusted stubble. Long dark hair streaked with grey, tied back with leather cord. Old scar across left temple.",
+      "body_build": "Lean and wiry sailor's build, deceptively strong. Moves with a strange duality - sometimes loose and rolling like a sailor, other times precise and centered like a trained monk.",
+      "clothing": "Faded grey monastic robes worn open over a sailor's weathered leather vest and loose canvas pants. Rope belt with many knots. Bare feet wrapped in cloth bindings.",
+      "accessories": "Golden ring on right hand that glints with inner fire (the Ring of Truth). Simple hemp rope bracelet. Small scraps of paper tucked in belt for communicating with 'Him'. Sword called 'Grandma's Comfort' with an ugly pattern on the blade."
     }
   },
-  "ExampleHero.Formal": {
-    "name": "Example Hero (Formal)",
-    "role": "Protagonist",
-    "base_character": "ExampleHero",
-    "variant_context": "Formal event, gala, ceremony",
-    "full_description": "The same young adventurer, now dressed for a formal occasion. Bright curious eyes unchanged. Wearing elegant noble attire instead of traveling gear.",
+
+  "Eurostras.WithHim": {
+    "name": "Eurostras (Him in Control)",
+    "role": "Protagonist (Book One)",
+    "base_character": "Eurostras",
+    "variant_context": "When the monk entity 'Him' is in control",
+    "full_description": "The same weathered pirate body, but posture shifted to perfect stillness. Eyes now focused with monastic clarity. Face serene rather than haunted. Hands positioned in meditative mudras. The Ring of Truth glows brighter.",
     "description_components": {
-      "head_face": "Young face with bright, curious eyes. Short brown hair, neatly combed. Slightly uncomfortable formal expression.",
-      "body_build": "Average height, athletic build. Standing straighter than usual, slightly stiff posture.",
-      "clothing": "Fine dark blue doublet with silver embroidery. Crisp white shirt underneath. Pressed dark trousers and polished black boots.",
-      "accessories": "Small ceremonial dagger at belt, silver chain necklace."
+      "head_face": "Same weathered face, but expression transformed - serene, present, focused. Eyes clear with monk-like wisdom. Features relaxed into perfect calm despite the scars.",
+      "body_build": "Same lean build but posture now perfectly centered, grounded. Every movement economical and deliberate. Martial arts ready-stance.",
+      "clothing": "Same faded grey robes now worn properly closed, sleeves rolled. The sailor's garb hidden beneath. Bare feet planted firmly.",
+      "accessories": "Ring of Truth glowing with golden light. Hands often held in martial or meditative positions."
     }
   },
-  "ExampleHero.Injured": {
-    "name": "Example Hero (Injured)",
-    "role": "Protagonist",
-    "base_character": "ExampleHero",
-    "variant_context": "After battle, wounded state",
-    "full_description": "The same young adventurer showing battle damage. Bright eyes now tired and pained. Leather armor torn and bloodied, visible wounds.",
+
+  "Armando": {
+    "name": "Armando",
+    "role": "Protagonist (All Books)",
+    "full_description": "A flamboyant human warlock with an unsettling edge beneath the showmanship. Dark hair slicked back dramatically. Sharp features with a wide smile that doesn't reach his nervous eyes. Wears theatrical crimson and black clothing befitting a circus ringmaster, with subtle infernal motifs. Deep fear of clowns lurks beneath his confident exterior.",
     "description_components": {
-      "head_face": "Young face with tired, pained eyes. Short brown hair matted with sweat and dirt. Cut above left eyebrow, bruised cheek.",
-      "body_build": "Average height, athletic build. Slouched posture, favoring left side. Exhausted stance.",
-      "clothing": "Leather armor torn and dented. Linen shirt visible through tears, bloodstained. Pants muddy and ripped at knee.",
-      "accessories": "Backpack missing, walking staff broken and used as crutch, bandage wrapped around left arm."
+      "head_face": "Sharp, angular features with high cheekbones. Slicked-back dark hair with a dramatic widow's peak. Wide showman's smile that sometimes falters. Eyes that dart nervously at any hint of clown imagery. Thin goatee trimmed to points.",
+      "body_build": "Average height, theatrical posture - always performing. Gestures dramatically when speaking. Thin but carries himself as if larger.",
+      "clothing": "Crimson long coat with black velvet lapels, subtle flame embroidery. Black silk shirt beneath. Dark fitted pants tucked into polished boots with slight heels. Everything slightly too theatrical, like a circus ringmaster.",
+      "accessories": "Several rings including a signet with Rizzmodeus's flame mark. Leather pouch of spell components. Small hidden bag of 'Greenwise's finest' herb. The Eyes of Rizzmodeus - a pair of gleaming ruby-like stones."
     }
   },
-  "ExampleMentor": {
-    "name": "Example Mentor",
-    "role": "Supporting Character",
-    "full_description": "An elderly sage with kind eyes and weathered features. Long silver beard, flowing blue robes. Carries an ancient tome.",
+
+  "Armando.Infernal": {
+    "name": "Armando (Infernal Power)",
+    "role": "Protagonist",
+    "base_character": "Armando",
+    "variant_context": "When channeling Rizzmodeus's power in combat",
+    "full_description": "Armando transformed by demonic power - eyes blazing with orange fire, shadows writhing around him. Crimson coat seems to ripple with inner flame. Eldritch symbols glow along his arms. His theatrical smile now genuinely terrifying.",
     "description_components": {
-      "head_face": "Weathered face with deep laugh lines. Kind, wise eyes. Long silver beard reaching chest level.",
-      "body_build": "Tall but slightly stooped with age. Thin frame, graceful movements.",
-      "clothing": "Flowing robes in deep blue with silver embroidery. Simple sandals.",
-      "accessories": "Ancient leather-bound tome, crystal pendant on silver chain."
+      "head_face": "Same sharp features but eyes now blazing orange with demonic fire. Shadows pool unnaturally around his face. Smile now predatory and genuinely frightening. Goatee seems to smolder.",
+      "body_build": "Same theatrical posture but now crackling with barely contained power. Shadows bend toward him.",
+      "clothing": "Crimson coat now seems alive with inner flame, edges smoking. Black shirt reveals glowing infernal runes on forearms. Same boots but leaving scorched footprints.",
+      "accessories": "Rings glow hot with power. Rizzmodeus's signet now visibly burning. Fire licks from between his fingers."
+    }
+  },
+
+  "Corpium": {
+    "name": "Corpium",
+    "role": "Protagonist (Books One-Two)",
+    "full_description": "A massive bronze-scaled dragonborn warrior with battle-worn scales and a pragmatic demeanor. Muscular frame carries the weight of heavy armor easily. Yellow reptilian eyes that reveal little emotion about his brother Whortheus's death. Wields the legendary axe Patricia II with brutal efficiency.",
+    "description_components": {
+      "head_face": "Powerful dragonborn head with bronze scales that catch light like hammered metal. Short horns swept back. Yellow reptilian eyes, cold and calculating. Scarred snout from countless battles. No nostalgia in his expression.",
+      "body_build": "Massive and powerfully built, even for a dragonborn. Thick neck, broad shoulders. Moves with surprising grace for his size. Battle-ready stance at all times.",
+      "clothing": "Heavy plate armor worn over chainmail, scarred and dented from use. Leather straps and belts everywhere. Dark red cloak attached at one shoulder, frayed at edges.",
+      "accessories": "Patricia II - a legendary double-headed axe that gleams with ancient power, named after his weapon tradition. Belt with potion vials. Small dreidel on a chain (contains Gimel)."
+    }
+  },
+
+  "Corpium.GlassAuthority": {
+    "name": "Corpium (Glass Authority)",
+    "role": "Protagonist / Political Figure",
+    "base_character": "Corpium",
+    "variant_context": "After becoming Glass Authority, hearing demon voices",
+    "full_description": "Corpium transformed by political power and demonic influence. Bronze scales now have an iridescent glass-like sheen. Eyes show exhaustion from hearing imprisoned demons constantly. Wears elaborate ceremonial armor befitting the Glass Authority.",
+    "description_components": {
+      "head_face": "Same powerful dragonborn head but scales now shimmer with glass-like iridescence. Eyes weary, dark circles visible beneath yellow reptilian gaze. Expression of one who hears whispers constantly.",
+      "body_build": "Same massive build but posture heavier, burdened by political responsibility and demonic voices.",
+      "clothing": "Elaborate glass-adorned ceremonial plate armor. Crystalline elements worked into the metal. Rich crimson cloak with the Authority's symbol. More refined but still battle-ready.",
+      "accessories": "Patricia II now upgraded with demonic essence. Glass Authority's chain of office. Signet ring of office."
+    }
+  },
+
+  "Whortheus": {
+    "name": "Whortheus",
+    "role": "Supporting (Dies Part 1)",
+    "full_description": "A scholarly human wizard with Corpium's brother, though they share no obvious resemblance despite blood relation. Thin and bookish, perpetually distracted by arcane theory. Wore robes that were always slightly singed from experiments. Died foolishly poking a bear.",
+    "description_components": {
+      "head_face": "Thin, scholarly face with wire-rimmed spectacles. Wispy brown hair, often uncombed. Expression of perpetual academic distraction. Ink stains on chin from chewing quill ends.",
+      "body_build": "Thin and slightly stooped from hunching over books. Pale from spending too much time indoors. Moved with absent-minded energy.",
+      "clothing": "Blue wizard's robes with scorch marks and potion stains. Multiple pockets sewn in, all bulging with components. Leather sandals.",
+      "accessories": "Crystal orb that would later be placed in Shin. Multiple pouches of spell components. Ink-stained fingers."
+    }
+  },
+
+  "Viz": {
+    "name": "Viz",
+    "role": "Supporting (Coma)",
+    "full_description": "A changeling rogue with a constantly shifting appearance, though they favor a pale androgynous human form. Raised in a cult, Viz can transform into any humanoid they can draw well. Often keeps their features deliberately vague - a canvas waiting for identity.",
+    "description_components": {
+      "head_face": "Deliberately vague features that seem to shift if you look away. Pale, almost white skin. Eyes that change color subtly. Neither masculine nor feminine, existing in between.",
+      "body_build": "Medium height, slender build that could become anything. Moves with practiced stealth, always aware of escape routes.",
+      "clothing": "Dark practical clothing with many hidden pockets. Leather armor worn under a hooded cloak. Everything designed for mobility and anonymity.",
+      "accessories": "Small sketchbook always at hand (key to transformation power). Fine charcoal pencils. Multiple sets of lockpicks. Several hidden daggers."
+    }
+  },
+
+  "Jhornos": {
+    "name": "Jhornos Vexolhath",
+    "role": "Protagonist (Books Two-Four)",
+    "full_description": "A scarlet-skinned tiefling swordfighter with the bearing of a professional killer and the redemption of a fallen hero. Former assassin known as 'Deep-blade'. Now wields Patricia II after Corpium's death, carrying on his legacy and Rizzmodeus pact. Sharp features, curved horns, and a tail that moves with predatory grace.",
+    "description_components": {
+      "head_face": "Sharp tiefling features with scarlet skin. Ram-like horns that curve back elegantly. Yellow eyes with slitted pupils. Thin scar across bridge of nose. Expression of calm lethality softened by growing heroism.",
+      "body_build": "Tall and lithe, built for speed and precision over brute force. Moves with assassin's grace, each step deliberate. Tail balances movements unconsciously.",
+      "clothing": "Dark leather armor reinforced at vital points. Black cloak that seems to drink light. High collar that can be pulled up to obscure features. Boots designed for silent movement.",
+      "accessories": "Patricia II - the legendary dragonbane axe, seeming at odds with his assassin build but now mastered. Corpium's Rizzmodeus pact sigil glowing on palm. Hidden blade strapped to forearm."
+    }
+  },
+
+  "Indigo": {
+    "name": "Indigo",
+    "role": "Protagonist (Books Two-Three)",
+    "full_description": "A coastal druid with sun-weathered skin and eyes the color of deep sea water. Fiercely protective of animals and nature. Carries the tragic secret that her 'sister' is actually her daughter - a truth hidden by cursed memory. Wild hair tangled with shells and seaweed.",
+    "description_components": {
+      "head_face": "Weathered but kind face with deep blue eyes that shift like ocean currents. Wild hair the color of wet sand, woven with shells and bits of dried seaweed. Freckled from coastal sun. Expression shifts from maternal warmth to druidic ferocity.",
+      "body_build": "Strong from swimming and coastal life. Moves with the rhythm of waves. Comfortable in water and on land equally.",
+      "clothing": "Flowing garments in blues and greens, made from natural materials. Sealskin cloak. Bare feet most of the time, toughened from shore walking.",
+      "accessories": "Driftwood staff carved with wave patterns. Prismatic Fool's Mask - a disturbing artifact that can transfer consciousness. Shell necklace with one piece that glows when animals are near."
+    }
+  },
+
+  "Bromdir": {
+    "name": "Bromdir Sparrowcap",
+    "role": "Supporting (Dies Part 15)",
+    "full_description": "A cheerful halfling innkeeper who became an unlikely adventurer. Round face, impressive muttonchops, and perpetually ruddy cheeks from taste-testing his own ale. Later loses his name to the Fey, becoming 'Sweetie Pie'. Despite his jovial appearance, meets a tragic end through Midas's gamble.",
+    "description_components": {
+      "head_face": "Round, friendly halfling face with impressive rust-colored muttonchops. Ruddy cheeks from ale and laughter. Warm brown eyes that crinkle when smiling, which is often. Slightly crooked nose from a bar brawl.",
+      "body_build": "Stocky halfling build, slightly portly from sampling too much of his own cooking. Surprisingly quick and nimble when needed.",
+      "clothing": "Practical innkeeper's attire upgraded for adventure - leather vest over puffy white shirt, sturdy trousers with many pockets. Quality boots sized for halfling feet.",
+      "accessories": "Cooking knife of surprisingly good quality (also useful for stabbing). Pouch of spices 'for emergencies'. Flask of his signature ale. Small frying pan strapped to pack."
+    }
+  },
+
+  "Bromdir.SweetiePie": {
+    "name": "Sweetie Pie (formerly Bromdir)",
+    "role": "Supporting",
+    "base_character": "Bromdir",
+    "variant_context": "After losing his name gambling with the Fey",
+    "full_description": "The same halfling, but something fundamental is missing. Eyes now slightly too bright, smile slightly too wide. The Fey have his name and he answers only to 'Sweetie Pie'. Still cheerful but with an uncanny edge that wasn't there before.",
+    "description_components": {
+      "head_face": "Same friendly face but something is off - eyes too bright, smile too wide, joy that doesn't quite reach the depths. Muttonchops unchanged but face seems more mask-like.",
+      "body_build": "Same stocky halfling build but movements now have an odd rhythm, as if dancing to music only he hears.",
+      "clothing": "Same practical attire but now seems to fit differently, colors slightly more saturated than before.",
+      "accessories": "Same items but handles them with unfamiliar familiarity, as if remembering what they meant to someone else."
+    }
+  },
+
+  "Aylan": {
+    "name": "Aylan (Syllin)",
+    "role": "Supporting (Books Two-Three)",
+    "full_description": "A holy person traveling under a false name, real name Syllin. Wanted for a murder he didn't commit - his own father's death. Carries divine light beneath a heavy burden of false guilt. Serene features that hide inner turmoil.",
+    "description_components": {
+      "head_face": "Young, serene face with features that could be either masculine or feminine. Shaved head with religious tattoos on scalp. Calm grey eyes that sometimes betray deep sadness. Peaceful expression that masks terrible guilt.",
+      "body_build": "Slender, ascetic build from religious fasting and travel. Graceful movements from temple training.",
+      "clothing": "Simple white and gold religious robes, travel-worn but kept clean. Rope sandals. Humble appearance befitting a traveling holy person.",
+      "accessories": "Simple holy symbol on leather cord. Prayer beads worn at wrist. Small scripture book in belt pouch. No weapons visible."
+    }
+  },
+
+  "SirGoom": {
+    "name": "Sir Goom",
+    "role": "Protagonist (Books Two-Four)",
+    "full_description": "A heroic paladin who already knows of The Library, making him a valuable ally. Classically handsome in a knightly way, with strong jaw and noble bearing. Engaged to bartender Evelyn, fighting to return to her. Armor gleams with divine blessing.",
+    "description_components": {
+      "head_face": "Classically handsome knightly face - strong jaw, straight nose, determined blue eyes. Short-cropped blonde hair. Clean-shaven, scar on chin from training. Expression of noble determination.",
+      "body_build": "Tall and powerfully built, the ideal knightly physique. Broad shoulders, straight posture. Moves with trained military precision.",
+      "clothing": "Gleaming plate armor polished to mirror shine, with golden accents. White tabard over armor bearing holy symbols. Heavy boots, gauntlets tucked in belt when not fighting.",
+      "accessories": "Longsword blessed by his order. Shield with emblem of his faith. Small locket containing Evelyn's portrait. Holy symbol prominently displayed."
+    }
+  },
+
+  "TadPoolish": {
+    "name": "Tad Poolish",
+    "role": "Protagonist (Book Four)",
+    "full_description": "A grung knight with an unending thirst - literally, as his amphibian nature demands constant hydration. Small but fierce, covered in vibrant poisonous skin. Joins after learning about The Library's threat. Combines frog-like appearance with knightly bearing.",
+    "description_components": {
+      "head_face": "Bright blue grung face with large golden eyes. Wide mouth in perpetual slight smile. Small crest of darker blue along head. Expression alert and curious despite constant search for water.",
+      "body_build": "Small but muscular grung frame, roughly halfling-sized. Powerful legs built for leaping. Always glistening from needing moisture.",
+      "clothing": "Miniature knight's armor custom-fitted for grung anatomy. Tabard in blue and gold. Armor has channels that hold water against skin.",
+      "accessories": "Tiny but deadly lance. Shield sized for grung. Multiple waterskins everywhere - belt, back, hanging from armor. Small helmet with holes for eyes and head-crest."
+    }
+  },
+
+  "Rizzmodeus": {
+    "name": "Rizzmodeus",
+    "role": "Antagonist/Patron",
+    "full_description": "One of the Three Humors - demon lord of fire and rage. Massive infernal presence of living flame and obsidian. Was imprisoned beneath the Glass Citadel until freed by Corpium. Armando's patron. Appears as a towering figure of contained apocalypse.",
+    "description_components": {
+      "head_face": "Massive horned head wreathed in eternal flame. Face of cracked obsidian with molten veins. Eyes like twin suns, too bright to look at directly. Expression of ancient, patient fury.",
+      "body_build": "Towering demonic form of solid flame and volcanic rock. Proportioned like a muscular humanoid but twice the height of any man. Heat distorts the air around him.",
+      "clothing": "No clothing - body is made of flame and obsidian. Chains of his former imprisonment still wrapped around forearms, now melted and fused to skin as decoration.",
+      "accessories": "Crown of volcanic glass that floats above head. The broken seals of his prison hang from his waist as trophies."
+    }
+  },
+
+  "Librarian": {
+    "name": "Librarian",
+    "role": "Antagonist/Horror",
+    "full_description": "Black-winged skeletal entities from The Library, offering forbidden knowledge. Not standard undead but something from outside reality. Emerge from black sand, cannot die permanently. Ancient, alien, and wrong in ways that hurt to perceive.",
+    "description_components": {
+      "head_face": "Skeletal face that is subtly wrong - too many teeth, angles that don't align with reality. Empty eye sockets that somehow see. No expression but somehow conveys ancient knowing.",
+      "body_build": "Skeletal humanoid form but proportions are off - limbs too long, joints bending wrong. Moves with terrible grace. Black sand constantly trailing from bones.",
+      "clothing": "Tattered robes of void-black material that seems to absorb light. The fabric moves as if underwater even in still air.",
+      "accessories": "Great black feathered wings that fold like a cloak. Carries artifacts from The Library - scrolls, rings, strange objects. Black sand falls from every movement."
+    }
+  },
+
+  "Chromium": {
+    "name": "Chromium",
+    "role": "Antagonist (Book Three)",
+    "full_description": "The King Beneath the Mountains - not a standard beholder but a god-being who manifests dreams into reality. Massive floating sphere of iridescent metallic scales covered in eyes. Creates nightmare storms and doppelgangers. Controls the Dwarflands through terror.",
+    "description_components": {
+      "head_face": "Massive central eye that reflects all possible futures. Iridescent metallic sphere covered in smaller eyes, each seeing different realities. 'Face' is just the central eye and massive toothy maw beneath.",
+      "body_build": "Spherical form roughly twelve feet in diameter. No limbs but many eye-stalks constantly moving. Floats silently, defying physics. Surface ripples like liquid metal.",
+      "clothing": "No clothing possible on this form. Surface adorned with trophies from conquered kings - crowns, medals, chains of office embedded in metallic flesh.",
+      "accessories": "The eye-stalks themselves are weapons, each capable of different devastating effects. Dreams manifest as visible wisps around the body."
+    }
+  },
+
+  "Gimel": {
+    "name": "Gimel",
+    "role": "Supporting/Artifact",
+    "full_description": "A golden golem summoned from a dreidel, helpful and kind. Contains four personalities including the dangerous Nun. Can shift between forms (Gimel and Shin). Filled with golden gelt coins. Later transforms into terrifying 20-foot platinum form when absorbing Nun.",
+    "description_components": {
+      "head_face": "Stylized golden face, simple and friendly in Gimel form. Geometric features suggesting kindness. Eyes of polished gold that somehow convey warmth.",
+      "body_build": "Humanoid golden construct roughly five feet tall. Proportions slightly blocky, clearly artificial. Moves with gentle mechanical precision. Golden gelt coins visible through joints.",
+      "clothing": "No clothing - body is polished gold. Hebrew letter carved into forehead denotes current personality.",
+      "accessories": "Slots and seams where coins can be deposited or withdrawn. The dreidel that summons it hangs around neck when manifested."
+    }
+  },
+
+  "Gimel.Transformed": {
+    "name": "Gimel (Transformed by Nun)",
+    "role": "Antagonist/Boss",
+    "base_character": "Gimel",
+    "variant_context": "After absorbing the Oblivion Stone Nun",
+    "full_description": "Gimel corrupted and transformed by absorbing Nun - now a terrifying 20-foot platinum golem. The friendly personality buried beneath Nun's mindwiping power. Required angel intervention to stop.",
+    "description_components": {
+      "head_face": "Massive platinum head, features now twisted and wrong. Multiple faces seem to overlay - Gimel's kindness, Nun's oblivion. Eyes blaze with power to destroy minds.",
+      "body_build": "Twenty feet of platinum terror, proportions exaggerated into something nightmarish. Moves with terrible purpose, each step shaking the ground.",
+      "clothing": "Platinum surface crawling with Hebrew letters that hurt to read. The Oblivion Stone Nun visible in chest cavity, pulsing with anti-light.",
+      "accessories": "Broken chains of those who tried to stop it. Reality seems to warp around its hands, ready to erase anything it touches."
     }
   }
 }
