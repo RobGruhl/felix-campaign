@@ -17,7 +17,133 @@
       "thumbnail": "images/thumbnails/page-002.webp",
       "characters": ["Eurostras", "Armando", "Whortheus"],
       "locations": ["Silver Tower"]
+    },
+    {
+      "page": 3,
+      "title": "The Staff of Silneas",
+      "chapter": 1,
+      "image": "images/pages/page-003.webp",
+      "thumbnail": "images/thumbnails/page-003.webp",
+      "characters": ["Eurostras", "Armando", "Whortheus"],
+      "locations": ["Silver Tower"]
+    },
+    {
+      "page": 4,
+      "title": "Theft in the Night",
+      "chapter": 1,
+      "image": "images/pages/page-004.webp",
+      "thumbnail": "images/thumbnails/page-004.webp",
+      "characters": ["Eurostras", "Armando", "Whortheus", "Gimel"],
+      "locations": ["Silver Tower"]
+    },
+    {
+      "page": 5,
+      "title": "Don't Poke the Bear",
+      "chapter": 2,
+      "image": "images/pages/page-005.webp",
+      "thumbnail": "images/thumbnails/page-005.webp",
+      "characters": ["Eurostras", "Armando", "Whortheus"],
+      "locations": ["Waterdeep"]
+    },
+    {
+      "page": 6,
+      "title": "The Brother",
+      "chapter": 2,
+      "image": "images/pages/page-006.webp",
+      "thumbnail": "images/thumbnails/page-006.webp",
+      "characters": ["Eurostras", "Armando", "Corpium", "Gimel"],
+      "locations": ["Waterdeep"]
+    },
+    {
+      "page": 7,
+      "title": "Waterdeep",
+      "chapter": 3,
+      "image": "images/pages/page-007.webp",
+      "thumbnail": "images/thumbnails/page-007.webp",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "locations": ["Waterdeep"]
+    },
+    {
+      "page": 8,
+      "title": "The Wizard Council",
+      "chapter": 3,
+      "image": "images/pages/page-008.webp",
+      "thumbnail": "images/thumbnails/page-008.webp",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "locations": ["Waterdeep"]
+    },
+    {
+      "page": 9,
+      "title": "Robbery Gone Wrong",
+      "chapter": 4,
+      "image": "images/pages/page-009.webp",
+      "thumbnail": "images/thumbnails/page-009.webp",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "locations": ["Waterdeep"]
+    },
+    {
+      "page": 10,
+      "title": "A Second Chance",
+      "chapter": 5,
+      "image": "images/pages/page-010.webp",
+      "thumbnail": "images/thumbnails/page-010.webp",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "locations": ["Plynach Mountain"]
+    },
+    {
+      "page": 11,
+      "title": "Clowning Around",
+      "chapter": 6,
+      "image": "images/pages/page-011.webp",
+      "thumbnail": "images/thumbnails/page-011.webp",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "locations": ["Plynach Mountain"]
+    },
+    {
+      "page": 12,
+      "title": "The Cathedral Ruins",
+      "chapter": 7,
+      "image": "images/pages/page-012.webp",
+      "thumbnail": "images/thumbnails/page-012.webp",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "locations": ["Plynach Mountain"]
+    },
+    {
+      "page": 13,
+      "title": "The Librarian",
+      "chapter": 8,
+      "image": "images/pages/page-013.webp",
+      "thumbnail": "images/thumbnails/page-013.webp",
+      "characters": ["Eurostras", "Armando", "Corpium", "Librarian"],
+      "locations": ["Plynach Mountain"]
+    },
+    {
+      "page": 14,
+      "title": "Forbidden Knowledge",
+      "chapter": 8,
+      "image": "images/pages/page-014.webp",
+      "thumbnail": "images/thumbnails/page-014.webp",
+      "characters": ["Eurostras", "Armando", "Corpium", "Librarian"],
+      "locations": ["Plynach Mountain"]
+    },
+    {
+      "page": 15,
+      "title": "Against the Impossible",
+      "chapter": 8,
+      "image": "images/pages/page-015.webp",
+      "thumbnail": "images/thumbnails/page-015.webp",
+      "characters": ["Corpium", "Librarian"],
+      "locations": ["Plynach Mountain"]
+    },
+    {
+      "page": 16,
+      "title": "Return to Waterdeep",
+      "chapter": 9,
+      "image": "images/pages/page-016.webp",
+      "thumbnail": "images/thumbnails/page-016.webp",
+      "characters": ["Eurostras", "Armando", "Corpium"],
+      "locations": ["Waterdeep", "Khovum's Ship"]
     }
   ],
-  "total": 2
+  "total": 16
 }
