@@ -125,15 +125,31 @@ for f in output/pages/*.png; do cwebp -q 85 "$f" -o "${f%.png}.webp"; done
 {
   "page_num": 1,
   "title": "Scene or Chapter Title",
-  "panel_count": 4,
-  "is_spread": false,
+  "layout": "3-top-wide",
   "panels": [
     {
       "panel_num": 1,
-      "annotation": "Tall",
-      "visual": "Detailed description of what the panel shows...",
-      "dialogue": "Speaker: \"Dialogue text.\" Other: \"Response.\"",
-      "characters": ["CharacterKey", "CharacterKey.Variant"],
+      "visual": "Wide establishing shot of the location...",
+      "dialogue": "",
+      "characters": ["CharacterKey"],
+      "location": "LocationKey",
+      "aspect_ratio": "16:9",
+      "size": "1536x864"
+    },
+    {
+      "panel_num": 2,
+      "visual": "Close-up reaction shot...",
+      "dialogue": "Speaker: \"Dialogue text.\"",
+      "characters": ["CharacterKey.Variant"],
+      "location": "LocationKey",
+      "aspect_ratio": "3:4",
+      "size": "768x1024"
+    },
+    {
+      "panel_num": 3,
+      "visual": "Second character responding...",
+      "dialogue": "Other: \"Response.\"",
+      "characters": ["OtherCharacter"],
       "location": "LocationKey",
       "aspect_ratio": "3:4",
       "size": "768x1024"
@@ -142,7 +158,9 @@ for f in output/pages/*.png; do cwebp -q 85 "$f" -o "${f%.png}.webp"; done
 }
 ```
 
-**Note:** `characters` can be a list (database lookup) or dict (embedded descriptions). List is preferred.
+**Key fields:**
+- `layout` - Named layout (see Layout System below). If omitted, auto-detects based on panel count.
+- `characters` - List (database lookup) or dict (embedded descriptions). List is preferred.
 
 ### Character Entry (`data/characters.json`)
 
@@ -225,17 +243,48 @@ The generator looks up `Hero.Formal` and `Dragon` from `characters.json` and ass
 ```
 Use the list syntax (database lookup) by default. Use dict syntax only when you need a unique description that doesn't belong in the database.
 
-### 2. Aspect Ratios for Grid Layouts
+### 2. Layout System
 
-| Layout | Ratio | Size | Use For |
-|--------|-------|------|---------|
-| 2x2 Grid | `3:4` | `768x1024` | Standard panels |
-| Wide Shot | `16:9` | `1536x1024` | Establishing shots |
-| Splash | `9:16` | `1024x1536` | Dramatic moments |
+The layout system supports 8 named layouts with 1-4 panels. Specify in page JSON with `"layout": "layout-name"`.
 
-**NEVER use `1:1` (square) for grid pages** - creates ugly gaps.
+| Layout | Panels | Description | Panel Aspect Ratios |
+|--------|--------|-------------|---------------------|
+| `splash` | 1 | Full page dramatic moment | 3:4 (1024x1536) |
+| `2-horizontal` | 2 | Two stacked wide panels | 16:9 each (1536x864) |
+| `2-vertical` | 2 | Two side-by-side tall panels | 9:16 each (576x1024) |
+| `3-top-wide` | 3 | Wide establishing + 2 below | 16:9 top, 3:4 bottom |
+| `3-bottom-wide` | 3 | 2 above + wide conclusion | 3:4 top, 16:9 bottom |
+| `3-left-tall` | 3 | Tall left + 2 right | 9:16 left, 3:4 right |
+| `3-right-tall` | 3 | 2 left + tall right | 3:4 left, 9:16 right |
+| `grid` | 4 | Standard 2x2 grid | 3:4 all (768x1024) |
 
-### 3. Gemini Aspect Ratio Mapping
+**Auto-detection:** If no layout specified:
+- 1 panel → `splash`
+- 2 panels → `2-horizontal`
+- 3 panels → `3-top-wide`
+- 4 panels → `grid`
+
+**Layout recommendations by scene type:**
+- **Establishing:** `3-top-wide`, `splash`
+- **Dialogue:** `grid`, `3-left-tall`, `3-right-tall`
+- **Action:** `grid`, `2-horizontal`, `splash`
+- **Dramatic reveal:** `splash`, `3-bottom-wide`
+- **Character focus:** `3-left-tall`, `3-right-tall`
+
+### 3. Aspect Ratios by Position
+
+Match your panel's aspect ratio to where it will be placed:
+
+| Position | Ratio | Size | Use For |
+|----------|-------|------|---------|
+| Single cell (grid) | `3:4` | `768x1024` | Standard panels in grid or 3-panel layouts |
+| Wide span | `16:9` | `1536x864` | Top/bottom in 3-panel, both in 2-horizontal |
+| Tall span | `9:16` | `576x1024` | Left/right in 3-panel, both in 2-vertical |
+| Full page | `3:4` | `1024x1536` | Splash pages |
+
+**NEVER use `1:1` (square)** - creates ugly gaps in all layouts.
+
+### 4. Gemini Aspect Ratio Mapping
 
 The generator maps these automatically:
 - `tall`, `splash`, `portrait` → `9:16`
@@ -243,7 +292,7 @@ The generator maps these automatically:
 - `3:4` → `3:4` (native)
 - `square` → `1:1`
 
-### 4. Prompt Assembly Flow
+### 5. Prompt Assembly Flow
 
 The generator builds prompts from:
 1. **Style** (`style.json`) - Applied to ALL panels
@@ -254,7 +303,7 @@ The generator builds prompts from:
 4. **Visual** - The scene description
 5. **Dialogue** - Triggers speech bubble instructions
 
-### 5. Iterating on Descriptions
+### 6. Iterating on Descriptions
 
 If generated images don't match expectations:
 1. Update the character/location description in the database
@@ -263,7 +312,7 @@ If generated images don't match expectations:
    - Delete `output/panels/page-XXX-panel-Y*.png`
    - Run generator again for that page
 
-### 6. Character and Location Variants
+### 7. Character and Location Variants
 
 Use **dot notation** for character/location variants (different outfits, states, transformations):
 

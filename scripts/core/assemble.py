@@ -91,14 +91,15 @@ def cleanup_variants(page_num, panels):
 
 
 def assemble_page(page_data, cleanup=False):
-    """Assemble panels into a page using simplified layout system."""
+    """Assemble panels into a page using the named layout system."""
 
     page_num = page_data['page_num']
     panels = page_data['panels']
     num_panels = len(panels)
+    layout = page_data.get('layout')  # None means auto-detect
 
-    layout_type = "splash" if num_panels == 1 else "2x2 grid"
-    print(f"\n-> Assembling page {page_num} ({num_panels} panels, {layout_type})...")
+    layout_display = layout if layout else f"auto ({num_panels} panels)"
+    print(f"\n-> Assembling page {page_num} ({num_panels} panels, layout: {layout_display})...")
 
     # Check if all panels have been selected
     missing_panels = []
@@ -123,12 +124,13 @@ def assemble_page(page_data, cleanup=False):
             placeholder = Image.new('RGB', (1024, 1536), 'gray')
             panel_images.append(placeholder)
 
-    # Use simplified layout engine
+    # Use layout engine with named layout support
     page_img = assemble_page_with_layout(
         panels_data=panels,
         panel_images=panel_images,
         page_width=PAGE_WIDTH,
-        page_height=PAGE_HEIGHT
+        page_height=PAGE_HEIGHT,
+        custom_layout=layout
     )
 
     # Save page

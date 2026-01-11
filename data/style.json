@@ -58,10 +58,51 @@
     "demons": "Each of the Three Humors has distinct aesthetic: Rizzmodeus (fire, rage), Midas (gold, greed), Dionysus (revelry, excess).",
     "beholderkin": "Eye motifs throughout. Chromium should feel like a god-being, not a standard D&D beholder. Dreamlike and terrifying."
   },
-  "aspect_ratio_usage": {
-    "3:4": "Standard panels in 2x2 grid layouts. Most common ratio for dialogue and action.",
-    "9:16": "Tall/splash panels for dramatic reveals, character deaths, epic moments.",
-    "16:9": "Wide landscape panels for establishing shots, battles, and journey sequences.",
-    "1:1": "Square panels - avoid for grid layouts. Use only for specific artistic effect."
+  "layout_options": {
+    "description": "Named layouts determine panel arrangement on page. Specify in page JSON as 'layout' field.",
+    "layouts": {
+      "splash": "1 panel - Full page for dramatic moments (use 3:4 portrait)",
+      "2-horizontal": "2 panels - Stacked wide panels for cinematic pacing (use 16:9 each)",
+      "2-vertical": "2 panels - Side-by-side tall panels for parallel action (use 9:16 each)",
+      "3-top-wide": "3 panels - Wide establishing shot on top + 2 below (16:9 top, 3:4 bottom)",
+      "3-bottom-wide": "3 panels - 2 on top + wide conclusion below (3:4 top, 16:9 bottom)",
+      "3-left-tall": "3 panels - Tall character focus left + 2 right (9:16 left, 3:4 right)",
+      "3-right-tall": "3 panels - 2 left + tall character focus right (3:4 left, 9:16 right)",
+      "grid": "4 panels - Standard 2x2 grid for dialogue/action (use 3:4 for all)"
+    },
+    "auto_detection": "If no layout specified, auto-detects: 1=splash, 2=2-horizontal, 3=3-top-wide, 4=grid"
+  },
+  "aspect_ratio_by_position": {
+    "description": "Use these ratios based on where the panel will be placed",
+    "single_cell": {
+      "ratio": "3:4",
+      "size": "768x1024",
+      "use_for": "Standard grid panels, TL/TR/BL/BR positions"
+    },
+    "wide_span": {
+      "ratio": "16:9",
+      "size": "1536x864",
+      "use_for": "Wide top or bottom panels in 3-panel layouts, 2-horizontal layouts"
+    },
+    "tall_span": {
+      "ratio": "9:16",
+      "size": "576x1024",
+      "use_for": "Tall left or right panels in 3-panel layouts, 2-vertical layouts"
+    },
+    "full_page": {
+      "ratio": "3:4",
+      "size": "1024x1536",
+      "use_for": "Splash pages, dramatic full-page moments"
+    }
+  },
+  "layout_recommendations": {
+    "establishing": ["3-top-wide", "splash"],
+    "dialogue": ["grid", "3-left-tall", "3-right-tall"],
+    "action": ["grid", "2-horizontal", "splash"],
+    "dramatic_reveal": ["splash", "3-bottom-wide"],
+    "parallel_action": ["2-vertical", "2-horizontal"],
+    "character_focus": ["3-left-tall", "3-right-tall", "splash"],
+    "climax": ["splash", "3-bottom-wide"],
+    "transition": ["2-horizontal", "3-top-wide"]
   }
 }
