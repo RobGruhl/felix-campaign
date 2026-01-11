@@ -1,6 +1,7 @@
 {
   "_schema": {
-    "description": "Comic style and aesthetic guidelines applied to all panels. Customize to match your desired art style.",
+    "description": "Felix Campaign - Dark Fantasy Painterly style for graphic novel adaptation",
+    "inspiration": "Monstress, The Sandman, Magic: The Gathering art",
     "notes": [
       "base_style is prepended to all prompts",
       "art_style defines the visual aesthetic",
@@ -8,28 +9,59 @@
     ]
   },
   "comic_aesthetic": {
-    "base_style": "Professional comic book panel illustration. High quality graphic novel art.",
-    "art_style": "Bold ink line art with vibrant colors. Dynamic composition with strong perspective. Sequential art style with clear visual storytelling. Expressive character poses and faces.",
-    "setting_tone": "Adventure narrative with rich world-building details.",
-    "visual_quality": "High detail, professional quality, publication-ready artwork.",
+    "base_style": "Dark fantasy graphic novel illustration. Painterly digital art with rich textures and atmospheric depth. Publication-quality artwork.",
+    "art_style": "Painterly rendering with visible brushwork and textured surfaces. Rich, layered colors with dramatic chiaroscuro lighting. Moody atmospheric perspective. Intricate details in costumes, architecture, and magical effects. Expressive faces with emotional depth. Oil painting meets digital art aesthetic.",
+    "setting_tone": "Epic dark fantasy with cosmic horror undertones. A world of ancient magic, imprisoned demons, and forbidden knowledge. Moments range from intimate tragedy to apocalyptic battles. The tone shifts between wonder, dread, and sorrow.",
+    "visual_quality": "High detail, museum-quality illustration. Rich color depth. Atmospheric lighting that sets mood. Professional fantasy art publication standard.",
     "important_restrictions": [
       "Maintain consistent character appearances across panels",
       "Clear readable speech bubbles when dialogue is present",
-      "No anachronistic elements unless specified"
+      "No modern/anachronistic elements",
+      "Avoid generic fantasy tropes - this world has specific lore",
+      "Library creatures should feel alien and wrong, not standard undead"
     ]
   },
+  "color_palette": {
+    "description": "Shifting palette that follows emotional beats of the story",
+    "primary_moods": {
+      "adventure": "Warm golds, rich browns, forest greens - sense of journey and discovery",
+      "horror": "Deep purples, sickly greens, void blacks - The Library and its creatures",
+      "tragedy": "Desaturated blues, cold grays, muted earth tones - loss and sacrifice",
+      "demonic": "Burnt oranges, infernal reds, sulfur yellows - Rizzmodeus and demon encounters",
+      "divine": "Pale golds, ethereal whites, soft blues - Soapstone, angels, holy moments",
+      "political": "Rich jewel tones, deep crimsons, glass greens - Glass Citadel intrigue"
+    },
+    "signature_elements": {
+      "the_library": "Black sand, void purple, skeletal white - alien and wrong",
+      "ring_of_truth": "Golden glow with white core - piercing illumination",
+      "clowns": "Garish colors that feel unsettling against the painterly style",
+      "beholder_dreams": "Surreal color shifts, eye motifs in reds and yellows"
+    }
+  },
   "dialogue_rendering": {
-    "instruction": "Include speech bubbles with dialogue text clearly readable. Position bubbles to not obscure important visual elements. Use appropriate bubble shapes for different speech types (normal, shouting, whispering)."
+    "instruction": "Include speech bubbles with dialogue text clearly readable. Bubbles should have a slightly rough, hand-drawn quality that fits the painterly style. Position bubbles to not obscure important visual elements. Use parchment-tinted bubbles for narration, white for speech, jagged for shouting, wispy for whispers or magical speech."
   },
   "panel_guidelines": {
-    "action_scenes": "Dynamic angles, motion lines, dramatic lighting. Characters in mid-action poses.",
-    "dialogue_scenes": "Clear character expressions, appropriate body language. Medium shots for conversation.",
-    "establishing_shots": "Wide perspective showing environment and context. Set the scene before action."
+    "action_scenes": "Dynamic compositions with dramatic lighting. Motion suggested through blur and energy effects rather than speed lines. Painterly chaos for battle scenes.",
+    "dialogue_scenes": "Intimate framing with expressive faces. Rich environmental details. Warm or cool lighting to match emotional tone.",
+    "establishing_shots": "Sweeping vistas with atmospheric perspective. Architecture and landscape rendered with care. Set mood before action.",
+    "horror_scenes": "Deep shadows, limited light sources. Library creatures partially obscured. Wrongness in proportions and angles.",
+    "tragic_scenes": "Desaturated palette, soft focus backgrounds. Focus on character emotion. Space for grief."
+  },
+  "character_rendering": {
+    "style": "Detailed but not photorealistic. Expressive features. Distinctive silhouettes. Costumes with texture and wear.",
+    "faces": "Emotional range is key. Eyes convey inner state. Scars and marks tell stories.",
+    "poses": "Dynamic action poses. Weighted and grounded standing poses. Body language communicates personality."
+  },
+  "creature_design": {
+    "library_entities": "Skeletal but wrong. Black wings, void-touched. Ancient and alien. Not standard undead - something from outside reality.",
+    "demons": "Each of the Three Humors has distinct aesthetic: Rizzmodeus (fire, rage), Midas (gold, greed), Dionysus (revelry, excess).",
+    "beholderkin": "Eye motifs throughout. Chromium should feel like a god-being, not a standard D&D beholder. Dreamlike and terrifying."
   },
   "aspect_ratio_usage": {
-    "3:4": "Standard panels in 2x2 grid layouts. Most common ratio.",
-    "9:16": "Tall/splash panels for dramatic full-page moments.",
-    "16:9": "Wide landscape panels for establishing shots and action sequences.",
-    "1:1": "Square panels - use sparingly, can create awkward layouts."
+    "3:4": "Standard panels in 2x2 grid layouts. Most common ratio for dialogue and action.",
+    "9:16": "Tall/splash panels for dramatic reveals, character deaths, epic moments.",
+    "16:9": "Wide landscape panels for establishing shots, battles, and journey sequences.",
+    "1:1": "Square panels - avoid for grid layouts. Use only for specific artistic effect."
   }
 }
