@@ -1,20 +1,22 @@
 {
   "pages": [
     {
-      "page": 0,
-      "title": "Cover",
-      "image": "images/pages/page-000.webp",
-      "thumbnail": "images/thumbnails/page-000.webp",
-      "characters": [],
-      "locations": []
-    },
-    {
       "page": 1,
-      "title": "Page 1",
+      "title": "Awakening",
+      "chapter": 1,
       "image": "images/pages/page-001.webp",
       "thumbnail": "images/thumbnails/page-001.webp",
-      "characters": [],
-      "locations": []
+      "characters": ["Eurostras", "Armando", "Whortheus"],
+      "locations": ["Silver Tower Dungeon"]
+    },
+    {
+      "page": 2,
+      "title": "The Silver Tower",
+      "chapter": 1,
+      "image": "images/pages/page-002.webp",
+      "thumbnail": "images/thumbnails/page-002.webp",
+      "characters": ["Eurostras", "Armando", "Whortheus"],
+      "locations": ["Silver Tower"]
     }
   ],
   "total": 2

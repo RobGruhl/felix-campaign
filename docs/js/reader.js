@@ -34,7 +34,7 @@ class ComicReader {
             this.generateThumbnailGrid();
 
             // Update total pages display
-            document.getElementById('total-pages').textContent = this.pages.length - 1; // Subtract cover
+            document.getElementById('total-pages').textContent = this.pages.length;
 
         } catch (error) {
             console.error('Failed to initialize reader:', error);
@@ -277,7 +277,7 @@ class ComicReader {
         document.getElementById('page-title').textContent = page.title;
 
         // Update browser title
-        document.title = `${page.title} - Graphic Novel`;
+        document.title = `${page.title} - Felix Campaign`;
 
         // Update button states
         this.updateButtonStates();
